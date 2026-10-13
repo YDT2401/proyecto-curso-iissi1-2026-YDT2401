@@ -8,8 +8,13 @@
 4. Ruiz Núñez, Manuel
 
 ## 1. Introducción al problema
+En la sociedad actual, el ritmo de vida que llevamos tan acelerado y las jornadas de trabajo eternas hacen que las familias y los profesionales independientes prácticamente no tengan tiempo libre. De toda la vida, contratar a alguien para limpiar en casa siempre ha sido cuestión de recomendaciones de boca en boca o de recurrir a las típicas agencias que te pegan un sablazo con las comisiones. Al final, es un sector donde hay muchísimo trabajo en negro, los precios nunca están claros y cuesta la misma vida dar con alguien de confianza que encima tenga hueco cuando a ti te viene bien.
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+Por el lado de los clientes, los principales problemas son la desconfianza de meter a un desconocido en tu casa, lo difícil que es encontrar a alguien disponible a las horas que te interesan, tener que pagar siempre en efectivo a la antigua y no tener referencias de verdad para saber si esa persona es de fiar.
+
+Por la parte de los profesionales de la limpieza, se encuentran con que les cuesta bastante dar con clientes fijos, sufren impagos o cancelaciones a última hora que les dejan vendidos, pierden muchísimo tiempo entre casa y casa, y encima no tienen herramientas para organizarse el día a día de forma profesional.
+
+Para solucionar todo esto surge el proyecto CleanConnect, que busca digitalizar y formalizar este sector mediante una aplicación móvil y web al estilo de Uber. La plataforma hará de intermediaria para asegurar que los clientes puedan encontrar a alguien rápido, ver perfiles con identidad verificada, consultar opiniones con estrellas y comentarios, y pagar de forma segura. Mientras tanto, a los profesionales les garantiza flexibilidad de horarios, cobrar siempre sin sustos, gestionar su agenda fácilmente e ir construyendo su propia reputación en internet.
 
 ## 2. Glosario de términos
 
