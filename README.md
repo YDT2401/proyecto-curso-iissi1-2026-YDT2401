@@ -2,10 +2,10 @@
 
 ## Miembros del grupo L8-AM-3(sustituir)
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Rodríguez Ortiz, David
+2. Pérez Dot, Pol
+3. Rodríguez González, Gerard
+4. Ruiz Núñez, Manuel
 
 ## 1. Introducción al problema
 
