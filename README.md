@@ -19,6 +19,36 @@
 
 ### 3.1. Requisitos generales
 
+  ## R.G.01. Gestión de especialidades   
+Como administrador del sistema
+Quiero gestionar las especialidades de limpieza disponibles
+Para categorizar los servicios que pueden ofrecer los trabajadores.  
+
+  ## R.G.02. Gestión de clientes y trabajadores   
+Como administrador del sistema
+Quiero gestionar las cuentas y perfiles de los usuarios
+Para garantizar la autenticidad y seguridad de la plataforma.  
+
+  ## R.G.03. Gestión de reservas de servicio   
+Como cliente
+Quiero gestionar las reservas de servicios de limpieza
+Para coordinar la asistencia de un trabajador a mi domicilio.   
+  
+  ## R.G.04. Gestión de reseñas y valoraciones   
+Como cliente
+Quiero gestionar las reseñas sobre los trabajadores
+Para construir la reputación pública de los profesionales.   
+  
+  ## R.G.05. Gestión de incidencias   
+Como administrador del sistema
+Quiero gestionar las incidencias reportadas por los usuarios
+Para resolver mediaciones y disputas de forma justa.  
+  
+  ## R.G.06. Gestión de facturas y pagos   
+Como cliente
+Quiero gestionar los pagos y la consulta de facturas
+Para mantener el control del gasto de los servicios contratados.   
+  
 ### 3.2. Usuarios del sistema
 
 ## 4. Catálogo de requisitos
