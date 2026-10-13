@@ -99,6 +99,39 @@ para [razón]
 
 #### 4.1.2. Reglas de negocio
 
+R.N.01. Anticipación de reservas
+
+Como administrador del sistema
+
+Quiero que los clientes solo puedan realizar reservas con un mínimo de 24 horas y un máximo de 30 días de antelación
+
+Para asegurar que los trabajadores puedan organizar su agenda adecuadamente. 
+
+R.N.02. Cambios y cancelaciones de reservasComo administrador del sistema
+
+Quiero que los clientes puedan modificar o cancelar la reserva sin coste hasta 12 horas antes del inicio previsto
+
+Para dar flexibilidad al cliente sin perjudicar el tiempo reservado del trabajador. Si se cancela con menos de 12 horas, se cobrará al cliente 1 hora de servicio como penalización.   
+
+R.N.03. Restricción de reseñasComo administrador del sistema
+Quiero que solo se pueda redactar una reseña si existe un servicio con estado "Completado" vinculado entre el cliente y el trabajador
+Para evitar valoraciones falsas o manipulación de la reputación.   
+
+R.N.04. Suspensión por baja calificaciónComo administrador del sistema
+Quiero que si la nota media de un trabajador cae por debajo de 3.0 estrellas (tras acumular al menos 5 reseñas), su perfil pase automáticamente al estado "Suspendido"
+Para garantizar unos estándares mínimos de calidad en el servicio.   
+
+R.N.05. Retención de cobro por incidenciaComo administrador del sistema
+Quiero que si se abre una incidencia sobre un servicio, el pago correspondiente se mantenga retenido
+Para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.   
+
+R.N.06. Cálculo del importe del servicioComo administrador del sistema
+Quiero que el importe total del servicio se calcule multiplicando el número de horas contratadas por la tarifa horaria vigente del trabajador.   
+
+R.N.07. Validación obligatoria de trabajadoresComo administrador del sistema
+Quiero que un trabajador solo aparezca en las búsquedas si su estado es "Validado"
+Para garantizar que todos los profesionales hayan pasado la verificación de identidad.   
+
 ##### R.N.01. Título regla negocio
 
 Descripción de la regla de negocio.
