@@ -100,7 +100,14 @@ Como cliente
 
 Quiero gestionar los pagos y la consulta de facturas
 
-Para mantener el control del gasto de los servicios contratados   
+Para mantener el control del gasto de los servicios contratados  
+
+  #### R.G.08. Gestión de facturas y pagos   
+Como cliente o trabajador
+
+Quiero gestionar los mensajes que le mando a otro usuario
+
+Para mejorar la comunicación de cara a un servicio  
 
 ---
   
