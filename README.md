@@ -138,6 +138,14 @@ Descripción de la regla de negocio.
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
+### 4.2. Mapa de historias de usuario
+
+| Actividades de usuario | 1. Registro y Perfil | 2. Búsqueda y Reserva | 3. Ejecución y Pago | 4. Opiniones e Incidencias |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tareas de usuario** | - Crear cuenta<br>- Validar identidad | - Buscar profesionales<br>- Seleccionar fecha/hora | - Realizar servicio<br>- Consultar factura | - Dejar reseña<br>- Reportar problema |
+| **Release 1 (MVP - Funciones básicas)** | • Registro de Cliente y Trabajador.<br>• Validación de DNI por el Admin.<br>• Modificar datos personales. | • Filtrar por especialidad.<br>• Seleccionar fecha y hora disponible.<br>• Confirmar reserva. | • Marcar reserva como completada.<br>• Calcular importe automático.<br>• Generar factura simple. | • Calificar con estrellas (1 a 5).<br>• Escribir comentario breve.<br>• Abrir una incidencia básica. |
+| **Release 2 (Mejoras futuras)** | • Subir foto de perfil.<br>• Guardar direcciones frecuentes. | • Filtrar por precio y cercanía.<br>• Calendario interactivo. | • Pago directo con tarjeta/Stripe.<br>• Descargar factura en PDF. | • Subir fotos a las incidencias.<br>• Responder a reseñas por parte del trabajador. |
+
 ### 4.3. Requisitos no funcionales (opcional)
 
 **R.N.F. 01. Título requisito no funcional**
