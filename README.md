@@ -335,40 +335,6 @@ Prueba de aceptación:
 
 - La incidencia se borra
 
-#### R.F.07.1 Creación de factura
-Como cliente o trabajador
-
-Quiero registrar una incidencia asociada a un servicio
-
-Para solicitar la mediación del administrador ante un problema
-
-Prueba de aceptación:  
-
-- No se puede abrir una incidencia sin asociar un servicio existente.
-    
-- Se debe cumplir la regla de negocio R.N.05.   
-
-#### R.F.07.2 Edición de factura
-Como cliente o trabajador
-
-Quiero editar una incidencia abierta y registrada por mí
-
-Para corregir algún fallo en la misma
-
-Prueba de aceptación:   
-
-- La incidencia tiene que estar activa
-
-#### R.F.07.3 Eliminación de factura
-Como cliente o trabajador
-
-Quiero cancelar una incidencia abierta y registrada por mí
-
-Para cerrar dicha incidencia
-
-Prueba de aceptación:   
-
-- La incidencia se borra
 
 
 #### 4.1.1. Requisitos de información
