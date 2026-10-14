@@ -224,6 +224,42 @@ Prueba de aceptación:
 
 - Que no tenga ninguna incidencia abierta sobre un servicio suyo
 
+#### R.F.04.1 Creación de administrador
+Como trabajador
+
+Quiero registrar mi perfil con DNI/NIE, teléfono móvil, especialidades y zona de trabajo
+
+Para ofertar mis servicios en la plataforma
+
+Prueba de aceptación:   
+- La especialidad tiene que existir
+- El DNI tiene que tener un formato válido
+- El teléfono móvil tiene que tener un formato válido
+- La zona de trabajo no puede estar vacía
+
+#### R.F.03.2 Edición de trabajador
+Como trabajador
+
+Quiero editar en mi perfil mi teléfono móvil y/o zona de trabajo
+
+Para actualizar mis servicios en la plataforma
+
+Prueba de aceptación:   
+
+- El teléfono móvil tiene que tener un formato válido
+- La zona de trabajo no puede estar vacía
+
+#### R.F.03.3 Eliminación de trabajador
+Como trabajador
+
+Quiero eliminar mi perfil 
+
+Para finalizar mis servicios en la plataforma
+
+Prueba de aceptación:   
+
+- Que no tenga ninguna incidencia abierta sobre un servicio suyo
+
 #### R.F.04.1 Creación de servicio
 Como cliente
 
