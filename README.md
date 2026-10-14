@@ -95,14 +95,7 @@ Quiero gestionar las incidencias reportadas por los usuarios
 
 Para resolver mediaciones y disputas de forma justa
   
-  #### R.G.08. Gestión de facturas y pagos   
-Como cliente
-
-Quiero gestionar los pagos y la consulta de facturas
-
-Para mantener el control del gasto de los servicios contratados  
-
-  #### R.G.08. Gestión de facturas y pagos   
+  #### R.G.08. Gestión de mensajes
 Como cliente o trabajador
 
 Quiero gestionar los mensajes que le mando a otro usuario
@@ -196,26 +189,26 @@ Prueba de aceptación:
 #### R.F.03.1 Creación de trabajador
 Como trabajador
 
-Quiero registrar mi perfil con DNI/NIE, tarifa horaria y zona de trabajo
+Quiero registrar mi perfil con DNI/NIE, teléfono móvil y zona de trabajo
 
 Para ofertar mis servicios en la plataforma
 
 Prueba de aceptación:   
 
 - El DNI tiene que tener un formato válido
-- La tarifa horaria debe ser mayor que 0
+- El teléfono móvil tiene que tener un formato válido
 - La zona de trabajo no puede estar vacía
 
 #### R.F.03.2 Edición de trabajador
 Como trabajador
 
-Quiero editar en mi perfil la tarifa horaria y/o zona de trabajo
+Quiero editar en mi perfil mi teléfono móvil y/o zona de trabajo
 
 Para actualizar mis servicios en la plataforma
 
 Prueba de aceptación:   
 
-- La tarifa horaria debe ser mayor que 0
+- El teléfono móvil tiene que tener un formato válido
 - La zona de trabajo no puede estar vacía
 
 #### R.F.03.3 Eliminación de trabajador
@@ -229,7 +222,7 @@ Prueba de aceptación:
 
 - Que no tenga ninguna incidencia abierta sobre un servicio suyo
 
-#### R.F.04.1 Creación de reserva de servicio
+#### R.F.04.1 Creación de servicio
 Como cliente
 
 Quiero solicitar la reserva de un servicio indicando fecha, hora, horas estimadas y trabajador
@@ -245,7 +238,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.06   
 
 
-#### R.F.04.2 Edición de reserva de servicio
+#### R.F.04.2 Edición de servicio
 Como cliente
 
 Quiero modificar la fecha u hora de una reserva
@@ -257,7 +250,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.01   
 
 
-#### R.F.04.3 Eliminación de reserva de servicio
+#### R.F.04.3 Eliminación de servicio
 Como cliente o trabajador
 
 Quiero cancelar una reserva programada
@@ -321,7 +314,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.05.   
 
 #### R.F.06.2 Edición de incidencia
-Como cliente o trabajador
+Como usuario
 
 Quiero editar una incidencia abierta y registrada por mí
 
@@ -332,6 +325,41 @@ Prueba de aceptación:
 - La incidencia tiene que estar activa
 
 #### R.F.06.3 Eliminación de incidencia
+Como cliente o trabajador
+
+Quiero cancelar una incidencia abierta y registrada por mí
+
+Para cerrar dicha incidencia
+
+Prueba de aceptación:   
+
+- La incidencia se borra
+
+#### R.F.07.1 Creación de factura
+Como cliente o trabajador
+
+Quiero registrar una incidencia asociada a un servicio
+
+Para solicitar la mediación del administrador ante un problema
+
+Prueba de aceptación:  
+
+- No se puede abrir una incidencia sin asociar un servicio existente.
+    
+- Se debe cumplir la regla de negocio R.N.05.   
+
+#### R.F.07.2 Edición de factura
+Como cliente o trabajador
+
+Quiero editar una incidencia abierta y registrada por mí
+
+Para corregir algún fallo en la misma
+
+Prueba de aceptación:   
+
+- La incidencia tiene que estar activa
+
+#### R.F.07.3 Eliminación de factura
 Como cliente o trabajador
 
 Quiero cancelar una incidencia abierta y registrada por mí
@@ -439,7 +467,7 @@ Para evitar valoraciones falsas o manipulación de la reputación.
 #### R.N.03. Suspensión por baja calificación
 Como administrador del sistema
 
-Quiero que si la nota media de un trabajador cae por debajo de 3.0 estrellas (tras acumular al menos 5 reseñas), su perfil pase automáticamente al estado "Suspendido"
+Quiero que si la nota media de un trabajador cae por debajo de 2.0 estrellas (tras acumular al menos 5 reseñas), su perfil pase automáticamente al estado "Suspendido"
 
 Para garantizar unos estándares mínimos de calidad en el servicio.   
 
