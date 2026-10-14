@@ -276,7 +276,7 @@ Para expresar mi grado de satisfacción con el trabajador
 Prueba de aceptación:   
 
 - La puntuación debe estar comprendida entre 1 y 5
-- Se debe cumplir la regla de negocio R.N.03.   
+- Se debe cumplir la regla de negocio R.N.02.   
 
 
 #### R.F.05.2 Edición de reseña
@@ -290,7 +290,6 @@ Prueba de aceptación:
 
 - Al cambiar la puntuación la reseña se recalcula automáticamente la nota media del trabajador
 - La puntuación debe estar comprendida entre 1 y 5
-- Se debe cumplir la regla de negocio R.N.03
 
 #### R.F.05.3 Eliminación de reseña
 Como cliente
@@ -315,7 +314,7 @@ Prueba de aceptación:
 
 - No se puede abrir una incidencia sin asociar un servicio existente.
     
-- Se debe cumplir la regla de negocio R.N.05.   
+- Se debe cumplir la regla de negocio R.N.04.   
 
 #### R.F.06.2 Edición de incidencia
 Como usuario
