@@ -21,17 +21,17 @@ Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digital
 ---
 
 ## 2. Glosario de términos
-Cliente: La persona que usa la app para buscar y contratar a alguien que le limpie la casa o el local.
+- Cliente: La persona que usa la app para buscar y contratar a alguien que le limpie la casa o el local.
 
-Match: Cuando la app conecta automáticamente lo que quiere un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
+- Match: Cuando la app conecta automáticamente lo que quiere un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
 
-Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso de verificación de datos y tener su perfil público listo. 
+- Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso de verificación de datos y tener su perfil público listo. 
 
-Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido el servicio.
+- Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido el servicio.
 
-Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta de la casa o el local.
+- Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta de la casa o el local.
 
-Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y su reputación en la app.
+- Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y su reputación en la app.
 
 ---
 
@@ -88,7 +88,6 @@ Para mantener el control del gasto de los servicios contratados
    - Cliente: Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
    - Trabajador: Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
 
----
 
 ## 4. Catálogo de requisitos
 
@@ -111,7 +110,7 @@ Como administrador del sistema
 
 Quiero editar las especialidades existentes
 
-Para actualizar sus nombres o descripciones.
+Para actualizar sus nombres o descripciones
 
 Prueba de aceptación:   
 
@@ -132,7 +131,7 @@ Prueba de aceptación:
 - Al eliminar una especialidad, se desvincula automáticamente de los trabajadores que la tenían seleccionada   
 
 
-#### R.F.02.1 Registro de cliente
+#### R.F.02.1 Creación de cliente
 Como cliente
 
 Quiero registrarme en la plataforma
@@ -141,22 +140,32 @@ Para poder reservar servicios de limpieza
 
 Prueba de aceptación:   
 
-- No se puede crear un cliente sin nombre, email válido o teléfono
+- No se puede crear un cliente sin nombre, email  o teléfono ni dirección
 
 
-#### R.F.02.2 Edición de perfil de cliente
+#### R.F.02.2 Edición de cliente
 Como cliente
 
-Quiero actualizar mi dirección principal y teléfono
+Quiero actualizar mis datos o mi dirección
 
 Para garantizar la localización correcta al solicitar un servicio
 
 Prueba de aceptación:   
 
-- No se puede dejar la dirección ni el teléfono vacíos  
+- No se puede dejar la dirección ni el teléfono/email vacíos  
 
+#### R.F.02.3 Eliminación de cliente
+Como cliente
 
-#### R.F.03.1 Alta de trabajador
+Quiero eliminar mi perfil
+
+Para darme de baja de la aplicación
+
+Prueba de aceptación:   
+
+- No puede haber ninguna factura sin pagar
+
+#### R.F.03.1 Creación de trabajador
 Como trabajador
 
 Quiero registrar mi perfil con DNI/NIE, tarifa horaria y zona de trabajo
@@ -165,22 +174,32 @@ Para ofertar mis servicios en la plataforma
 
 Prueba de aceptación:   
 
+- El DNI tiene que tener un formato válido
 - La tarifa horaria debe ser mayor que 0
+- La zona de trabajo no puede estar vacía
 
-- El estado inicial del perfil será siempre "Pendiente de validación" 
+#### R.F.03.2 Edición de trabajador
+Como trabajador
 
+Quiero editar en mi perfil la tarifa horaria y/o zona de trabajo
 
-#### R.F.03.2 Validación de trabajador
-Como administrador del sistema
-
-Quiero validar el perfil de un trabajador tras comprobar su documentación
-
-Para autorizarlo a recibir reservas
+Para actualizar mis servicios en la plataforma
 
 Prueba de aceptación:   
 
-- Se aplica la regla de negocio R.N.06  
+- La tarifa horaria debe ser mayor que 0
+- La zona de trabajo no puede estar vacía
 
+#### R.F.03.3 Eliminación de trabajador
+Como trabajador
+
+Quiero eliminar mi perfil 
+
+Para finalizar mis servicios en la plataforma
+
+Prueba de aceptación:   
+
+- Que no tenga ninguna incidencia abierta sobre un servicio suyo
 
 #### R.F.04.1 Creación de reserva de servicio
 Como cliente
@@ -210,7 +229,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.01   
 
 
-#### R.F.04.3 Cancelación de reserva
+#### R.F.04.3 Eliminación de reserva de servicio
 Como cliente o trabajador
 
 Quiero cancelar una reserva programada
@@ -236,7 +255,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.03.   
 
 
-#### R.F.05.2 Moderación de reseña
+#### R.F.05.2 Edición de reseña
 Como administrador del sistema
 
 Quiero eliminar reseñas con contenido ofensivo
