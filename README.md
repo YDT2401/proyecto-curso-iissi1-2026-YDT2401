@@ -74,14 +74,14 @@ Quiero gestionar las cuentas y perfiles de los usuarios
 
 Para garantizar la autenticidad y seguridad de la plataforma 
 
-  #### R.G.05. Gestión de reservas de servicio   
+  #### R.G.05. Gestión de servicios   
 Como cliente
 
 Quiero gestionar las reservas de servicios de limpieza
 
 Para coordinar la asistencia de un trabajador a mi domicilio  
   
-  #### R.G.06. Gestión de reseñas y valoraciones   
+  #### R.G.06. Gestión de reseñas   
 Como cliente
 
 Quiero gestionar las reseñas sobre los trabajadores
