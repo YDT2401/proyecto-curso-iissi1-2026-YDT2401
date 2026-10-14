@@ -36,7 +36,7 @@ Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digital
 
 - Factura: Almacena los datos del pago y del comprobante de cada servicio realizado, desglosando el importe total, la comisión de la plataforma, los impuestos y el estado del cobro.
 
-- Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y    resolver las incidencias reportadas.
+- Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y resolver las incidencias reportadas.
   
 - Mensaje: Interacción entre un cliente y un trabajador acerca de un servicio. Incluye la fecha y la hora a la que se manda el mensaje y el contenido de este.
   
@@ -105,9 +105,9 @@ Para mejorar la comunicación de cara a un servicio
 ---
   
 ### 3.2. Usuarios del sistema
-   - Administrador: Gestor del sistema con acceso completo para la validación de perfiles, resolución de incidencias y moderación
-   - Cliente: Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
-   - Trabajador: Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
+- Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y resolver las incidencias reportadas.
+- Cliente: Usuarios que solicita y contrata los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
+- Trabajador: Representa a los profesionales que ofrecen sus servicios en la app. Incluye sus datos personales, el estado de verificación de su identidad, zona de trabajo y disponibilidad.
 
 
 ## 4. Catálogo de requisitos
