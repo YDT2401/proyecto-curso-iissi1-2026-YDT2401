@@ -10,28 +10,28 @@
 ---
 
 ## 1. Introducción al problema
-En la sociedad actual, el ritmo de vida que llevamos tan acelerado y las jornadas de trabajo eternas hacen que las familias y los profesionales independientes prácticamente no tengan tiempo libre. De toda la vida, contratar a alguien para limpiar en casa siempre ha sido cuestión de recomendaciones de boca en boca o de recurrir a las típicas agencias que te pegan un sablazo con las comisiones. Al final, es un sector donde hay muchísimo trabajo en negro, los precios nunca están claros y cuesta la misma vida dar con alguien de confianza que encima tenga hueco cuando a ti te viene bien.
+Hoy en día, el ritmo de vida que llevamos y las jornadas de trabajo eternas hacen que las familias y los profesionales independientes no tengan tiempo libre. De toda la vida, contratar a alguien para limpiar en casa siempre ha sido gracias a recomendaciones de conocidos o gracias a agencias cuyas comisiones son altísimas. Al final de todo, es un sector donde hay muchísimo trabajo en negro, los precios nunca están fijados y cuesta la misma vida dar con alguien, establecer confianza y hallar huecos donde la persona este disponible.
 
-Por el lado de los clientes, los principales problemas son la desconfianza de meter a un desconocido en tu casa, lo difícil que es encontrar a alguien disponible a las horas que te interesan, tener que pagar siempre en efectivo a la antigua y no tener referencias de verdad para saber si esa persona es de fiar.
+En cuanto a los clientes, los principales problemas son la falta de confianza para meter a una persona ajena en tu casa, lo difícil que es encontrar a alguien disponible a las horas que te interesan, tener que pagar siempre en efectivo y no tener ningun tipo de referencia o descripción sobre la actitud de la persona.
 
-Por la parte de los profesionales de la limpieza, se encuentran con que les cuesta bastante dar con clientes fijos, sufren impagos o cancelaciones a última hora que les dejan vendidos, pierden muchísimo tiempo entre casa y casa, y encima no tienen herramientas para organizarse el día a día de forma profesional.
+En cuanto a los profesionales, se encuentran con que les cuesta bastante dar con clientes fijos, sufren impagos o cancelaciones a última hora, pierden muchísimo tiempo entre casa y casa, y encima no tienen herramientas profesionales para organizarse en el dia a dia.
 
-Para solucionar todo esto surge el proyecto CleanConnect, que busca digitalizar y formalizar este sector mediante una aplicación móvil y web al estilo de Uber. La plataforma hará de intermediaria para asegurar que los clientes puedan encontrar a alguien rápido, ver perfiles con identidad verificada, consultar opiniones con estrellas y comentarios, y pagar de forma segura. Mientras tanto, a los profesionales les garantiza flexibilidad de horarios, cobrar siempre sin sustos, gestionar su agenda fácilmente e ir construyendo su propia reputación en internet.
+Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digitalizar y estructurar este sector mediante una aplicación móvil y web al estilo de Uber. La plataforma servirá de intermediaria para asegurar que los clientes puedan encontrar a alguien rápido de manera sencilla, ver perfiles con identidad verificada, consultar opiniones con estrellas y comentarios, y pagar de forma segura. Mientras tanto, a los profesionales les garantiza flexibilidad de horarios, cobrar siempre de manera segura, gestionar su agenda fácilmente e ir construyendo su propia reputación en el sector.
 
 ---
 
 ## 2. Glosario de términos
-Cliente: La persona que usa la app para pedir y contratar a alguien que le limpie la casa o el local.
+Cliente: La persona que usa la app para buscar y contratar a alguien que le limpie la casa o el local.
 
-Match: Cuando la app conecta automáticamente lo que pide un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
+Match: Cuando la app conecta automáticamente lo que quiere un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
 
-Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso para comprobar sus datos y tener su perfil público listo. 
+Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso de verificación de datos y tener su perfil público listo. 
 
-Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido todo.
+Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido el servicio.
 
-Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta donde hay que ir.
+Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta de la casa o el local.
 
-Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y las buenas opiniones que vaya acumulando en la app.
+Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y su reputación en la app.
 
 ---
 
