@@ -53,35 +53,49 @@ Quiero gestionar las especialidades de limpieza disponibles
 
 Para categorizar los servicios que pueden ofrecer los trabajadores  
 
-  #### R.G.02. Gestión de clientes y trabajadores   
+  #### R.G.02. Gestión de clientes   
+Como cliente
+
+Quiero gestionar una cuenta y un perfil de cliente
+
+Para poder contratar los servicios de limpieza de un trabajador
+
+  #### R.G.03. Gestión de trabajadores   
+Como trabajador
+
+Quiero gestionar una cuenta y un perfil de trabajador
+
+Para ofrecer mis servicios y poder ser contratado por un cliente 
+
+  #### R.G.04. Gestión de administradores del sistema
 Como administrador del sistema
 
 Quiero gestionar las cuentas y perfiles de los usuarios
 
-Para garantizar la autenticidad y seguridad de la plataforma  
+Para garantizar la autenticidad y seguridad de la plataforma 
 
-  #### R.G.03. Gestión de reservas de servicio   
+  #### R.G.05. Gestión de reservas de servicio   
 Como cliente
 
 Quiero gestionar las reservas de servicios de limpieza
 
 Para coordinar la asistencia de un trabajador a mi domicilio  
   
-  #### R.G.04. Gestión de reseñas y valoraciones   
+  #### R.G.06. Gestión de reseñas y valoraciones   
 Como cliente
 
 Quiero gestionar las reseñas sobre los trabajadores
 
 Para construir la reputación pública de los profesionales 
   
-  #### R.G.05. Gestión de incidencias   
+  #### R.G.07. Gestión de incidencias   
 Como administrador del sistema
 
 Quiero gestionar las incidencias reportadas por los usuarios
 
 Para resolver mediaciones y disputas de forma justa
   
-  #### R.G.06. Gestión de facturas y pagos   
+  #### R.G.08. Gestión de facturas y pagos   
 Como cliente
 
 Quiero gestionar los pagos y la consulta de facturas
