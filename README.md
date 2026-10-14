@@ -68,14 +68,9 @@ Para mantener el control del gasto de los servicios contratados
 
   
 ### 3.2. Usuarios del sistema
-  #### Administrador
-    Gestor del sistema con acceso completo para la validación de perfiles, resolución de incidencias y moderación.
-
-  #### Cliente
-    Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
-
-  #### Trabajador
-    Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
+   - Administrador: Gestor del sistema con acceso completo para la validación de perfiles, resolución de incidencias y moderación
+   - Cliente: Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
+   - Trabajador: Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
 
 ## 4. Catálogo de requisitos
 
@@ -248,17 +243,6 @@ Prueba de aceptación:
 - El estado de la incidencia pasa a "Resuelta" o "Desestimada".
 
 #### 4.1.1. Requisitos de información
-
-##### R.I.01. Título requisito de información
-
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
-
-**Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
 
 ##### R.I.01 Información sobre especialidades
 Como administrador del sistema
