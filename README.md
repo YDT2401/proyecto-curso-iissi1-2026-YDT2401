@@ -235,7 +235,9 @@ Prueba de aceptación:
 
 - No se puede crear una reserva sin cliente, trabajador, fecha o dirección  
 
-- Las horas de duración deben ser mayores que 0   
+- Las horas de duración deben ser mayores que 0
+
+- Se debe cumplir la regla de negocio R.N.05    
 
 - Se debe cumplir la regla de negocio R.N.06   
 
