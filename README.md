@@ -480,12 +480,12 @@ Quiero que si se abre una incidencia sobre un servicio, el pago correspondiente 
 Para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.   
 
 
-#### R.N.05. Cálculo del importe del servicio
+#### R.N.05. Rebaja del primer servicio
 Como administrador del sistema
 
-Quiero que el importe total del servicio se calcule multiplicando el número de horas contratadas por la tarifa horaria vigente del trabajador
+Quiero que el primer servicio que contrate un cliente no cuente con comisión por parte de la aplicación
 
-Para garantizar que el cobro guarde proporcionalidad exacta con el tiempo de trabajo acordado y evitar errores de cálculo en las facturas
+Para garantizar una buena primera experiencia al cliente
 
 
 #### R.N.06. Validación obligatoria de trabajadores
