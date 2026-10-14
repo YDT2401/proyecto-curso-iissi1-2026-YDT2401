@@ -251,23 +251,35 @@ Para expresar mi grado de satisfacción con el trabajador
 Prueba de aceptación:   
 
 - La puntuación debe estar comprendida entre 1 y 5
-
 - Se debe cumplir la regla de negocio R.N.03.   
 
 
 #### R.F.05.2 Edición de reseña
-Como administrador del sistema
+Como cliente
 
-Quiero eliminar reseñas con contenido ofensivo
+Quiero editar reseñas que haya realizado a algún servicio completado
 
-Para mantener el respeto en las valoraciones
+Para corregir posibles errores al escribir dicha reseña
 
 Prueba de aceptación:   
 
-- Al eliminar la reseña se recalcula automáticamente la nota media del trabajador.   
+- Al cambiar la puntuación la reseña se recalcula automáticamente la nota media del trabajador
+- La puntuación debe estar comprendida entre 1 y 5
+- Se debe cumplir la regla de negocio R.N.03
+
+#### R.F.05.3 Eliminación de reseña
+Como cliente
+
+Quiero eliminar reseñas que haya realizado a algún servicio completado
+
+Para que no aparezca la reseña sobre el servicio completado
+
+Prueba de aceptación:   
+
+- Al eliminar la reseña se recalcula automáticamente la nota media del trabajador.
 
 
-#### R.F.06.1 Apertura de incidencia
+#### R.F.06.1 Creación de incidencia
 Como cliente o trabajador
 
 Quiero registrar una incidencia asociada a un servicio
@@ -280,19 +292,28 @@ Prueba de aceptación:
     
 - Se debe cumplir la regla de negocio R.N.05.   
 
+#### R.F.06.2 Edición de incidencia
+Como cliente o trabajador
 
-#### R.F.06.2 Resolución de incidencia
-Como administrador del sistema
+Quiero editar una incidencia abierta y registrada por mí
 
-Quiero registrar el cierre de una incidencia con su resolución tomada
-
-Para finalizar la disputa y liberar los fondos retenidos
+Para corregir algún fallo en la misma
 
 Prueba de aceptación:   
 
-- El estado de la incidencia pasa a "Resuelta" o "Desestimada".
+- La incidencia tiene que estar activa
 
----
+#### R.F.06.3 Eliminación de incidencia
+Como cliente o trabajador
+
+Quiero cancelar una incidencia abierta y registrada por mí
+
+Para cerrar dicha incidencia
+
+Prueba de aceptación:   
+
+- La incidencia se borra
+
 
 #### 4.1.1. Requisitos de información
 
@@ -311,7 +332,7 @@ Prueba de aceptación:
 ##### R.I.02 Información sobre trabajadores disponibles
 Como cliente
 
-Quiero disponer de la lista de trabajadores filtrada por especialidad, nota media, tarifa máxima y disponibilidad
+Quiero disponer de la lista de trabajadores filtrada por especialidad, valoración, tarifa máxima y disponibilidad
 
 Para seleccionar al profesional idóneo.
 
@@ -348,6 +369,7 @@ Prueba de aceptación:
 Como administrador del sistema
 
 Quiero disponer de la lista de incidencias pendientes de resolución con fecha, emisor, tipo y servicio afectado
+
 Para intervenir oportunamente en los conflictos
 
 Prueba de aceptación:  
