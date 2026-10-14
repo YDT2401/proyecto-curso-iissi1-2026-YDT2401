@@ -393,7 +393,7 @@ Para garantizar que todos los profesionales hayan pasado la verificación de ide
 #### Historias de Usuario - Release 1 (Entrega principal)
 
 ##### Registro y Perfil
-**HU-01: Registro de usuario**
+#**HU-01: Registro de usuario**
 Como usuario (cliente o trabajador),
 
 quiero registrarme en la plataforma con mis datos personales,
@@ -401,7 +401,7 @@ quiero registrarme en la plataforma con mis datos personales,
 para poder acceder a los servicios de CleanConnect.
 
 
-**HU-02: Validación de trabajador**
+#**HU-02: Validación de trabajador**
 Como administrador del sistema,
 
 quiero verificar y validar la documentación de un trabajador,
@@ -410,7 +410,7 @@ para garantizar que solo profesionales autorizados aparezcan en las búsquedas.
 
 
 ##### Búsqueda y Reserva
-**HU-03: Búsqueda por especialidad**
+#**HU-03: Búsqueda por especialidad**
 Como cliente,
 
 quiero filtrar los trabajadores por especialidad de limpieza,
@@ -418,7 +418,7 @@ quiero filtrar los trabajadores por especialidad de limpieza,
 para encontrar al profesional adecuado para mi necesidad.
 
 
-**HU-04: Reserva de servicio**
+#**HU-04: Reserva de servicio**
 Como cliente,
 
 quiero seleccionar un trabajador, fecha y hora disponible,
@@ -427,7 +427,7 @@ para coordinar la asistencia de un servicio de limpieza en mi domicilio.
 
 
 ##### Ejecución y Pago
-**HU-05: Finalización del servicio**
+#**HU-05: Finalización del servicio**
 Como trabajador,
 
 quiero marcar un servicio como completado,
@@ -435,7 +435,7 @@ quiero marcar un servicio como completado,
 para que se registre la ejecución y se procese el cobro correspondiente.
 
 
-**HU-06: Consulta de importe y factura**
+#**HU-06: Consulta de importe y factura**
 Como cliente,
 
 quiero consultar el importe total calculado según las horas contratadas,
@@ -444,7 +444,7 @@ para mantener el control de mis gastos en la plataforma.
 
 
 ##### Opiniones e Incidencias
-**HU-07: Publicación de reseña**
+#**HU-07: Publicación de reseña**
 Como cliente,
 
 quiero valorar con estrellas y un comentario a un trabajador tras un servicio completado,
@@ -452,7 +452,7 @@ quiero valorar con estrellas y un comentario a un trabajador tras un servicio co
 para ayudar a construir la reputación pública del profesional.
 
 
-**HU-08: Apertura de incidencia**
+#**HU-08: Apertura de incidencia**
 Como cliente o trabajador,
 
 quiero reportar un problema sobre un servicio prestado,
@@ -464,7 +464,7 @@ para que el administrador retenga el pago y medie en la disputa.
 
 #### Historias de Usuario - Release 2 (Mejoras futuras)
 
-**HU-09: Foto de perfil y avatar**
+#**HU-09: Foto de perfil y avatar**
 Como usuario,
 
 quiero subir una fotografía a mi perfil,
@@ -472,7 +472,7 @@ quiero subir una fotografía a mi perfil,
 para generar mayor confianza con los demás usuarios de la plataforma.
 
 
-**HU-10: Filtrado avanzado por distancia y precio**
+#**HU-10: Filtrado avanzado por distancia y precio**
 Como cliente,
 
 quiero ordenar los trabajadores por tarifa horaria o cercanía,
@@ -480,7 +480,7 @@ quiero ordenar los trabajadores por tarifa horaria o cercanía,
 para optimizar la selección según mi presupuesto y ubicación.
 
 
-**HU-11: Descarga de facturas en PDF**
+#**HU-11: Descarga de facturas en PDF**
 Como cliente,
 
 quiero descargar un documento formal en PDF de cada servicio pagado,
@@ -488,7 +488,7 @@ quiero descargar un documento formal en PDF de cada servicio pagado,
 para conservarlo en mis archivos personales o contables.
 
 
-**HU-12: Adjuntar evidencias en incidencias**
+#**HU-12: Adjuntar evidencias en incidencias**
 Como usuario,
 
 quiero adjuntar fotografías al reportar una incidencia,
@@ -498,7 +498,7 @@ para facilitar al administrador la resolución del conflicto con pruebas visuale
 
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Tiempo de respuesta en búsquedas**
+#**R.N.F. 01. Tiempo de respuesta en búsquedas**
 
 Como cliente,
 
@@ -507,7 +507,7 @@ quiero que el tiempo de respuesta al filtrar trabajadores sea menor a 2 segundos
 para mejorar la experiencia de uso y evitar la frustración en la navegación.
 
 
-**R.N.F. 02. Protección y control de acceso**
+#**R.N.F. 02. Protección y control de acceso**
 
 Como responsable TIC del cliente,
 
@@ -516,7 +516,7 @@ quiero que las contraseñas se almacenen cifradas y los datos personales estén 
 para cumplir con la Ley de Protección de Datos y garantizar la privacidad de los usuarios.
 
 
-**R.N.F. 03. Disponibilidad del servicio**
+#**R.N.F. 03. Disponibilidad del servicio**
 
 Como responsable de ventas,
 
@@ -525,7 +525,7 @@ quiero que la disponibilidad del sistema sea lo más cercana posible a 24/7,
 para facilitar las contrataciones de servicios de limpieza en cualquier momento.
 
 
-**R.N.F. 04. Compatibilidad web**
+#**R.N.F. 04. Compatibilidad web**
 
 Como desarrollador del sistema,
 
@@ -534,7 +534,7 @@ quiero que la plataforma sea accesible desde navegadores web estándar,
 para asegurar la compatibilidad sin necesidad de instalar software adicional.
 
 
-**R.N.F. 05. Seguridad en el procesamiento de pagos**
+#**R.N.F. 05. Seguridad en el procesamiento de pagos**
 
 Como cliente,
 
