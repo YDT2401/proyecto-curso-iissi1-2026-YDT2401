@@ -7,6 +7,8 @@
 3. Rodríguez González, Gerard
 4. Ruiz Núñez, Manuel
 
+---
+
 ## 1. Introducción al problema
 En la sociedad actual, el ritmo de vida que llevamos tan acelerado y las jornadas de trabajo eternas hacen que las familias y los profesionales independientes prácticamente no tengan tiempo libre. De toda la vida, contratar a alguien para limpiar en casa siempre ha sido cuestión de recomendaciones de boca en boca o de recurrir a las típicas agencias que te pegan un sablazo con las comisiones. Al final, es un sector donde hay muchísimo trabajo en negro, los precios nunca están claros y cuesta la misma vida dar con alguien de confianza que encima tenga hueco cuando a ti te viene bien.
 
@@ -16,9 +18,13 @@ Por la parte de los profesionales de la limpieza, se encuentran con que les cues
 
 Para solucionar todo esto surge el proyecto CleanConnect, que busca digitalizar y formalizar este sector mediante una aplicación móvil y web al estilo de Uber. La plataforma hará de intermediaria para asegurar que los clientes puedan encontrar a alguien rápido, ver perfiles con identidad verificada, consultar opiniones con estrellas y comentarios, y pagar de forma segura. Mientras tanto, a los profesionales les garantiza flexibilidad de horarios, cobrar siempre sin sustos, gestionar su agenda fácilmente e ir construyendo su propia reputación en internet.
 
+---
+
 ## 2. Glosario de términos
 
 - Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+
+---
 
 ## 3. Visión general del sistema
 
@@ -66,12 +72,14 @@ Quiero gestionar los pagos y la consulta de facturas
 
 Para mantener el control del gasto de los servicios contratados   
 
+---
   
 ### 3.2. Usuarios del sistema
    - Administrador: Gestor del sistema con acceso completo para la validación de perfiles, resolución de incidencias y moderación
    - Cliente: Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
    - Trabajador: Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
 
+---
 
 ## 4. Catálogo de requisitos
 
@@ -256,6 +264,7 @@ Prueba de aceptación:
 
 - El estado de la incidencia pasa a "Resuelta" o "Desestimada".
 
+---
 
 #### 4.1.1. Requisitos de información
 
@@ -329,6 +338,7 @@ Prueba de aceptación:
 
 - El sistema muestra el id del servicio, fecha, horas realizadas, tarifa/hora e importe total pagado.
 
+---
 
 #### 4.1.2. Reglas de negocio
 
@@ -379,6 +389,7 @@ Quiero que un trabajador solo aparezca en las búsquedas si su estado es "Valida
 
 Para garantizar que todos los profesionales hayan pasado la verificación de identidad.
 
+---
 
 ### 4.2. Mapa de historias de usuario (opcional)
 
@@ -410,7 +421,7 @@ para garantizar que solo profesionales autorizados aparezcan en las búsquedas.
 
 
 #### Búsqueda y Reserva
-##### HU-03: Búsqueda por especialidad**
+##### HU-03: Búsqueda por especialidad
 Como cliente,
 
 quiero filtrar los trabajadores por especialidad de limpieza,
@@ -460,7 +471,7 @@ quiero reportar un problema sobre un servicio prestado,
 para que el administrador retenga el pago y medie en la disputa.
 
 
----
+
 
 #### Historias de Usuario - Release 2 (Mejoras futuras)
 
@@ -495,6 +506,7 @@ quiero adjuntar fotografías al reportar una incidencia,
 
 para facilitar al administrador la resolución del conflicto con pruebas visuales.
 
+---
 
 ### 4.3. Requisitos no funcionales (opcional)
 
@@ -542,6 +554,7 @@ quiero que el procesamiento de pagos se realice mediante una pasarela externa ce
 
 para garantizar que los datos bancarios no sean almacenados en los servidores de la plataforma.
 
+---
 
 -- fin entregable 1 --
 
