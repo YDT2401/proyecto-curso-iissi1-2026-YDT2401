@@ -21,8 +21,17 @@ Para solucionar todo esto surge el proyecto CleanConnect, que busca digitalizar 
 ---
 
 ## 2. Glosario de términos
+Cliente: La persona que usa la app para pedir y contratar a alguien que le limpie la casa o el local.
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+Match: Cuando la app conecta automáticamente lo que pide un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
+
+Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso para comprobar sus datos y tener su perfil público listo. 
+
+Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido todo.
+
+Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta donde hay que ir.
+
+Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y las buenas opiniones que vaya acumulando en la app.
 
 ---
 
