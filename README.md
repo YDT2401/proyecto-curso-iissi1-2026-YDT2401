@@ -20,18 +20,23 @@ Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digital
 
 ---
 
+
 ## 2. Glosario de términos
-- Cliente: La persona que usa la app para buscar y contratar a alguien que le limpie la casa o el local.
+- Especialidad: Representa los distintos tipos de limpieza que se ofrecen. Sirve para categorizar las habilidades del trabajador y facilitar la búsqueda al cliente.
 
-- Match: Cuando la app conecta automáticamente lo que quiere un cliente con un profesional que tiene ese hueco libre y trabaja por esa zona.
+- Clientes: Agrupa a los usuarios que solicitan y contratan los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
 
-- Profesional (o Limpiador): La persona que se apunta a la plataforma para ofrecer sus servicios de limpieza, después de haber pasado el proceso de verificación de datos y tener su perfil público listo. 
+- Trabajador: Representa a los profesionales que ofrecen sus servicios en la app. Incluye sus datos personales, el estado de verificación de su identidad, zona de trabajo y disponibilidad.
 
-- Reseña: La nota que se ponen entre el cliente y el limpiador al terminar el trabajo, combinando una puntuación de 1 a 5 estrellas con un comentario explicando qué tal ha ido el servicio.
+- Servicio: Es la entidad principal de la plataforma. Representa la reserva de un trabajo de limpieza concreto entre un cliente y un trabajador, guardando la fecha, hora, duración, ubicación y estado.
 
-- Servicio: El encargo de limpieza en sí, donde quedan fijados el día, la hora de empezar, las horas que va a durar y la dirección exacta de la casa o el local.
+- Reseñas: Guarda la valoración que realiza un cliente al terminar el servicio. Incluye una puntuación en estrellas y un comentario para construir la reputación pública del profesional.
 
-- Tarifa Base: Lo que cobra el profesional por cada hora de trabajo, que puede ir subiendo o cambiando según la experiencia que tenga y su reputación en la app.
+- Incidencias: Registra los problemas reportados por los usuarios sobre un servicio para que el administrador pueda gestionarlos y resolverlos.
+
+- Facturas: Almacena los datos del pago y del comprobante de cada servicio realizado, desglosando el importe total, la comisión de la plataforma, los impuestos y el estado del cobro.
+
+- Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y    resolver las incidencias reportadas.
 
 ---
 
