@@ -1,6 +1,6 @@
-# Título Proyecto
+# CleanConnect
 
-## Miembros del grupo L8-AM-3(sustituir)
+## Miembros del grupo L8-AM-3
 
 1. Rodríguez Ortiz, David
 2. Pérez Dot, Pol
