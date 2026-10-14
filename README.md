@@ -444,7 +444,7 @@ Para garantizar unos estándares mínimos de calidad en el servicio.
 #### R.N.04. Retención de cobro por incidencia
 Como administrador del sistema
 
-Quiero que si se abre una incidencia sobre un servicio, el pago correspondiente se mantenga retenido
+Quiero que si hay una incidencia activa sobre un servicio, el pago correspondiente se mantenga retenido
 
 Para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.   
 
