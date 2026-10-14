@@ -72,6 +72,7 @@ Para mantener el control del gasto de los servicios contratados
    - Cliente: Usuario que busca, reserva, paga servicios de limpieza y evalúa el trabajo recibido.
    - Trabajador: Profesional de la limpieza que gestiona su disponibilidad, acepta reservas, ejecuta el servicio y recibe cobros.
 
+
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
@@ -87,6 +88,7 @@ Prueba de aceptación:
 
 - No se puede crear una especialidad sin nombre o con nombre duplicado
 
+
 #### R.F.01.2 Edición de especialidad
 Como administrador del sistema
 
@@ -100,6 +102,7 @@ Prueba de aceptación:
 
 - No se puede dejar el nombre en blanco  
 
+
 #### R.F.01.3 Eliminación de especialidad
 Como administrador del sistema
 
@@ -110,6 +113,7 @@ Para mantener actualizado el catálogo de servicios
 Prueba de aceptación:   
 
 - Al eliminar una especialidad, se desvincula automáticamente de los trabajadores que la tenían seleccionada   
+
 
 #### R.F.02.1 Registro de cliente
 Como cliente
@@ -122,6 +126,7 @@ Prueba de aceptación:
 
 - No se puede crear un cliente sin nombre, email válido o teléfono
 
+
 #### R.F.02.2 Edición de perfil de cliente
 Como cliente
 
@@ -132,6 +137,7 @@ Para garantizar la localización correcta al solicitar un servicio
 Prueba de aceptación:   
 
 - No se puede dejar la dirección ni el teléfono vacíos  
+
 
 #### R.F.03.1 Alta de trabajador
 Como trabajador
@@ -146,6 +152,7 @@ Prueba de aceptación:
 
 - El estado inicial del perfil será siempre "Pendiente de validación" 
 
+
 #### R.F.03.2 Validación de trabajador
 Como administrador del sistema
 
@@ -156,6 +163,7 @@ Para autorizarlo a recibir reservas
 Prueba de aceptación:   
 
 - Se aplica la regla de negocio R.N.06  
+
 
 #### R.F.04.1 Creación de reserva de servicio
 Como cliente
@@ -172,6 +180,7 @@ Prueba de aceptación:
 
 - Se debe cumplir la regla de negocio R.N.06   
 
+
 #### R.F.04.2 Edición de reserva de servicio
 Como cliente
 
@@ -183,6 +192,7 @@ Prueba de aceptación:
 
 - Se debe cumplir la regla de negocio R.N.01   
 
+
 #### R.F.04.3 Cancelación de reserva
 Como cliente o trabajador
 
@@ -193,6 +203,7 @@ Para liberar el tiempo en la agenda
 Prueba de aceptación:   
 
 - Se aplica la penalización o reembolso según la regla de negocio R.N.01.  
+
 
 #### R.F.05.1 Creación de reseña
 Como cliente
@@ -207,6 +218,7 @@ Prueba de aceptación:
 
 - Se debe cumplir la regla de negocio R.N.03.   
 
+
 #### R.F.05.2 Moderación de reseña
 Como administrador del sistema
 
@@ -217,6 +229,7 @@ Para mantener el respeto en las valoraciones
 Prueba de aceptación:   
 
 - Al eliminar la reseña se recalcula automáticamente la nota media del trabajador.   
+
 
 #### R.F.06.1 Apertura de incidencia
 Como cliente o trabajador
@@ -231,6 +244,7 @@ Prueba de aceptación:
     
 - Se debe cumplir la regla de negocio R.N.05.   
 
+
 #### R.F.06.2 Resolución de incidencia
 Como administrador del sistema
 
@@ -241,6 +255,7 @@ Para finalizar la disputa y liberar los fondos retenidos
 Prueba de aceptación:   
 
 - El estado de la incidencia pasa a "Resuelta" o "Desestimada".
+
 
 #### 4.1.1. Requisitos de información
 
@@ -255,6 +270,7 @@ Prueba de aceptación:
 
 - El sistema muestra el nombre, descripción y recuento de profesionales por especialidad.
 
+
 ##### R.I.02 Información sobre trabajadores disponibles
 Como cliente
 
@@ -265,6 +281,7 @@ Para seleccionar al profesional idóneo.
 Prueba de aceptación:  
 
 - El sistema lista nombre, foto, especialidades, tarifa por hora y nota media calculada de los trabajadores validados.  
+
 
 ##### R.I.03 Información sobre historial de reservas
 Como cliente o trabajador
@@ -277,6 +294,7 @@ Prueba de aceptación:
 
 - El sistema muestra la lista detallada de reservas vinculadas al usuario   
 
+
 ##### R.I.04 Información sobre valoraciones y reseñas
 Como cliente
 
@@ -288,6 +306,7 @@ Prueba de aceptación:
 
 - El sistema muestra las opiniones asociadas a servicios completados del trabajador  
 
+
 ##### R.I.05 Información sobre incidencias
 Como administrador del sistema
 
@@ -297,6 +316,7 @@ Para intervenir oportunamente en los conflictos
 Prueba de aceptación:  
 
 - El sistema presenta la lista ordenada por fecha de apertura.   
+
 
 ##### R.I.06 Información sobre facturas y pagos
 Como cliente
@@ -309,6 +329,7 @@ Prueba de aceptación:
 
 - El sistema muestra el id del servicio, fecha, horas realizadas, tarifa/hora e importe total pagado.
 
+
 #### 4.1.2. Reglas de negocio
 
 #### R.N.01. Cambios y cancelaciones de reservas
@@ -318,12 +339,14 @@ Quiero que los clientes puedan modificar o cancelar la reserva sin coste hasta 1
 
 Para dar flexibilidad al cliente sin perjudicar el tiempo reservado del trabajador. Si se cancela con menos de 12 horas, se cobrará al cliente 1 hora de servicio como penalización.   
 
+
 #### R.N.02. Restricción de reseñas
 Como administrador del sistema
 
 Quiero que solo se pueda redactar una reseña si existe un servicio con estado "Completado" vinculado entre el cliente y el trabajador
 
 Para evitar valoraciones falsas o manipulación de la reputación.   
+
 
 #### R.N.03. Suspensión por baja calificación
 Como administrador del sistema
@@ -332,12 +355,14 @@ Quiero que si la nota media de un trabajador cae por debajo de 3.0 estrellas (tr
 
 Para garantizar unos estándares mínimos de calidad en el servicio.   
 
+
 #### R.N.04. Retención de cobro por incidencia
 Como administrador del sistema
 
 Quiero que si se abre una incidencia sobre un servicio, el pago correspondiente se mantenga retenido
 
 Para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.   
+
 
 #### R.N.05. Cálculo del importe del servicio
 Como administrador del sistema
@@ -346,6 +371,7 @@ Quiero que el importe total del servicio se calcule multiplicando el número de 
 
 Para garantizar que el cobro guarde proporcionalidad exacta con el tiempo de trabajo acordado y evitar errores de cálculo en las facturas
 
+
 #### R.N.06. Validación obligatoria de trabajadores
 Como administrador del sistema
 
@@ -353,9 +379,8 @@ Quiero que un trabajador solo aparezca en las búsquedas si su estado es "Valida
 
 Para garantizar que todos los profesionales hayan pasado la verificación de identidad.
 
-### 4.2. Mapa de historias de usuario (opcional)
 
-### 4.2. Mapa de historias de usuario
+### 4.2. Mapa de historias de usuario (opcional)
 
 | Actividades | 1. Registro y Perfil | 2. Búsqueda y Reserva | 3. Ejecución y Pago | 4. Opiniones e Incidencias |
 | :--- | :--- | :--- | :--- | :--- |
@@ -370,46 +395,70 @@ Para garantizar que todos los profesionales hayan pasado la verificación de ide
 ##### Registro y Perfil
 **HU-01: Registro de usuario**
 Como usuario (cliente o trabajador),
+
 quiero registrarme en la plataforma con mis datos personales,
+
 para poder acceder a los servicios de CleanConnect.
+
 
 **HU-02: Validación de trabajador**
 Como administrador del sistema,
+
 quiero verificar y validar la documentación de un trabajador,
+
 para garantizar que solo profesionales autorizados aparezcan en las búsquedas.
+
 
 ##### Búsqueda y Reserva
 **HU-03: Búsqueda por especialidad**
 Como cliente,
+
 quiero filtrar los trabajadores por especialidad de limpieza,
+
 para encontrar al profesional adecuado para mi necesidad.
+
 
 **HU-04: Reserva de servicio**
 Como cliente,
+
 quiero seleccionar un trabajador, fecha y hora disponible,
+
 para coordinar la asistencia de un servicio de limpieza en mi domicilio.
+
 
 ##### Ejecución y Pago
 **HU-05: Finalización del servicio**
 Como trabajador,
+
 quiero marcar un servicio como completado,
+
 para que se registre la ejecución y se procese el cobro correspondiente.
+
 
 **HU-06: Consulta de importe y factura**
 Como cliente,
+
 quiero consultar el importe total calculado según las horas contratadas,
+
 para mantener el control de mis gastos en la plataforma.
+
 
 ##### Opiniones e Incidencias
 **HU-07: Publicación de reseña**
 Como cliente,
+
 quiero valorar con estrellas y un comentario a un trabajador tras un servicio completado,
+
 para ayudar a construir la reputación pública del profesional.
+
 
 **HU-08: Apertura de incidencia**
 Como cliente o trabajador,
+
 quiero reportar un problema sobre un servicio prestado,
+
 para que el administrador retenga el pago y medie en la disputa.
+
 
 ---
 
@@ -417,29 +466,82 @@ para que el administrador retenga el pago y medie en la disputa.
 
 **HU-09: Foto de perfil y avatar**
 Como usuario,
+
 quiero subir una fotografía a mi perfil,
+
 para generar mayor confianza con los demás usuarios de la plataforma.
+
 
 **HU-10: Filtrado avanzado por distancia y precio**
 Como cliente,
+
 quiero ordenar los trabajadores por tarifa horaria o cercanía,
+
 para optimizar la selección según mi presupuesto y ubicación.
+
 
 **HU-11: Descarga de facturas en PDF**
 Como cliente,
+
 quiero descargar un documento formal en PDF de cada servicio pagado,
+
 para conservarlo en mis archivos personales o contables.
+
 
 **HU-12: Adjuntar evidencias en incidencias**
 Como usuario,
+
 quiero adjuntar fotografías al reportar una incidencia,
+
 para facilitar al administrador la resolución del conflicto con pruebas visuales.
+
+
 ### 4.3. Requisitos no funcionales (opcional)
 
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+**R.N.F. 01. Tiempo de respuesta en búsquedas**
+
+Como cliente,
+
+quiero que el tiempo de respuesta al filtrar trabajadores sea menor a 2 segundos con hasta 1000 usuarios concurrentes,
+
+para mejorar la experiencia de uso y evitar la frustración en la navegación.
+
+
+**R.N.F. 02. Protección y control de acceso**
+
+Como responsable TIC del cliente,
+
+quiero que las contraseñas se almacenen cifradas y los datos personales estén protegidos con control de acceso por roles,
+
+para cumplir con la Ley de Protección de Datos y garantizar la privacidad de los usuarios.
+
+
+**R.N.F. 03. Disponibilidad del servicio**
+
+Como responsable de ventas,
+
+quiero que la disponibilidad del sistema sea lo más cercana posible a 24/7,
+
+para facilitar las contrataciones de servicios de limpieza en cualquier momento.
+
+
+**R.N.F. 04. Compatibilidad web**
+
+Como desarrollador del sistema,
+
+quiero que la plataforma sea accesible desde navegadores web estándar,
+
+para asegurar la compatibilidad sin necesidad de instalar software adicional.
+
+
+**R.N.F. 05. Seguridad en el procesamiento de pagos**
+
+Como cliente,
+
+quiero que el procesamiento de pagos se realice mediante una pasarela externa certificada,
+
+para garantizar que los datos bancarios no sean almacenados en los servidores de la plataforma.
+
 
 -- fin entregable 1 --
 
