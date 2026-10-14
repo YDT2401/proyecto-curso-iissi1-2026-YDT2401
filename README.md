@@ -498,7 +498,7 @@ para facilitar al administrador la resolución del conflicto con pruebas visuale
 
 ### 4.3. Requisitos no funcionales (opcional)
 
-#**R.N.F. 01. Tiempo de respuesta en búsquedas**
+#### R.N.F. 01. Tiempo de respuesta en búsquedas
 
 Como cliente,
 
@@ -507,7 +507,7 @@ quiero que el tiempo de respuesta al filtrar trabajadores sea menor a 2 segundos
 para mejorar la experiencia de uso y evitar la frustración en la navegación.
 
 
-#**R.N.F. 02. Protección y control de acceso**
+#### R.N.F. 02. Protección y control de acceso
 
 Como responsable TIC del cliente,
 
@@ -516,7 +516,7 @@ quiero que las contraseñas se almacenen cifradas y los datos personales estén 
 para cumplir con la Ley de Protección de Datos y garantizar la privacidad de los usuarios.
 
 
-#**R.N.F. 03. Disponibilidad del servicio**
+#### R.N.F. 03. Disponibilidad del servicio
 
 Como responsable de ventas,
 
@@ -525,7 +525,7 @@ quiero que la disponibilidad del sistema sea lo más cercana posible a 24/7,
 para facilitar las contrataciones de servicios de limpieza en cualquier momento.
 
 
-#**R.N.F. 04. Compatibilidad web**
+#### R.N.F. 04. Compatibilidad web
 
 Como desarrollador del sistema,
 
@@ -534,7 +534,7 @@ quiero que la plataforma sea accesible desde navegadores web estándar,
 para asegurar la compatibilidad sin necesidad de instalar software adicional.
 
 
-#**R.N.F. 05. Seguridad en el procesamiento de pagos**
+#### R.N.F. 05. Seguridad en el procesamiento de pagos
 
 Como cliente,
 
