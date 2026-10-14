@@ -597,7 +597,7 @@ para mejorar la experiencia de uso y evitar la frustración en la navegación.
 
 #### R.N.F. 02. Protección y control de acceso
 
-Como responsable TIC del cliente,
+Como administrador,
 
 quiero que las contraseñas se almacenen cifradas y los datos personales estén protegidos con control de acceso por roles,
 
@@ -606,20 +606,20 @@ para cumplir con la Ley de Protección de Datos y garantizar la privacidad de lo
 
 #### R.N.F. 03. Disponibilidad del servicio
 
-Como responsable de ventas,
+Como administrador,
 
-quiero que la disponibilidad del sistema sea lo más cercana posible a 24/7,
+quiero que la aplicación esté disponible a todas horas,
 
 para facilitar las contrataciones de servicios de limpieza en cualquier momento.
 
 
 #### R.N.F. 04. Compatibilidad web
 
-Como desarrollador del sistema,
+Como usuario,
 
-quiero que la plataforma sea accesible desde navegadores web estándar,
+quiero poder usar la plataforma desde navegadores web estándar,
 
-para asegurar la compatibilidad sin necesidad de instalar software adicional.
+para poder acceder a la aplicación desde cualquier dispositivo y navegador.
 
 
 #### R.N.F. 05. Seguridad en el procesamiento de pagos
