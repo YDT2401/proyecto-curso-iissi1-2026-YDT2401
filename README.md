@@ -189,12 +189,12 @@ Prueba de aceptación:
 #### R.F.03.1 Creación de trabajador
 Como trabajador
 
-Quiero registrar mi perfil con DNI/NIE, teléfono móvil y zona de trabajo
+Quiero registrar mi perfil con DNI/NIE, teléfono móvil, especialidades y zona de trabajo
 
 Para ofertar mis servicios en la plataforma
 
 Prueba de aceptación:   
-
+- La especialidad tiene que existir
 - El DNI tiene que tener un formato válido
 - El teléfono móvil tiene que tener un formato válido
 - La zona de trabajo no puede estar vacía
