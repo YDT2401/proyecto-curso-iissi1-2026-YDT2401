@@ -415,6 +415,40 @@ Prueba de aceptación:
 - Solo el autor del mensaje puede eliminarlo.
 - El mensaje desaparece del hilo de chat de la conversación para ambas partes.
 
+#### R.F.09.1 Creación de factura
+Como administrador
+
+Quiero crear una factura sobre un servicio
+
+Para que tanto el cliente como el trabajador puedan verlas
+
+Prueba de aceptación:
+- No se puede crear una factura sin precio
+- Debe existir un servicio que vincule al cliente y al trabajador.
+- No se pueden crear dos facturas iguales con misma fecha y hora
+
+#### R.F.09.2 Edición de factura
+Como administrador
+
+Quiero editar una factura que haya enviado previamente
+
+Para corregir errores en la factura
+
+Prueba de aceptación:
+- El precio no puede ser negativo
+- Debe existir un servicio que vincule al cliente y al trabajador.
+- No puede haber dos facturas iguales con misma fecha y hora
+
+#### R.F.09.3 Eliminación de factura
+Como administrador
+
+Quiero eliminar una factura 
+
+Para que no haya facturas duplicadas o con errores
+
+Prueba de aceptación:
+- La factura se elimina correctamente
+
 #### 4.1.1. Requisitos de información
 
 ##### R.I.01 Información sobre especialidades
