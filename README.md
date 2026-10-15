@@ -102,6 +102,13 @@ Quiero gestionar los mensajes que le mando a otro usuario
 
 Para mejorar la comunicación de cara a un servicio  
 
+  #### R.G.09. Gestión de facturas
+Como administrador 
+
+Quiero gestionar las facturas de los servicios de los clientes 
+
+Para que puedan observar el historial de sus facturas y pagos 
+
 ---
   
 ### 3.2. Usuarios del sistema
