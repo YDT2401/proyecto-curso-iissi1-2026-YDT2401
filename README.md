@@ -421,8 +421,40 @@ Prueba de aceptación:
 
 - El sistema muestra el nombre, descripción y recuento de profesionales por especialidad.
 
+##### R.I.02 Información sobre clientes
+Como cliente
 
-##### R.I.02 Información sobre trabajadores disponibles
+Quiero que el sistema muestre mi perfil
+
+Para comprobar que mis datos aparecen correctamente
+
+Prueba de aceptación: 
+
+- El sistema muestra el nombre, teléfono, email y dirección.
+
+##### R.I.03 Información sobre trabajadores
+Como trabajador
+
+Quiero que el sistema muestre mi perfil
+
+Para comprobar que mis datos aparecen correctamente
+
+Prueba de aceptación: 
+
+- El sistema muestra el nombre, teléfono, email y zona de trabajo.
+
+##### R.I.04 Información sobre administrador
+Como administrador
+
+Quiero que el sistema muestre mi perfil
+
+Para comprobar que mis datos aparecen correctamente
+
+Prueba de aceptación: 
+
+- El sistema muestra el nombre, teléfono y email.
+
+##### R.I.05 Información sobre trabajadores disponibles
 Como cliente
 
 Quiero disponer de la lista de trabajadores filtrada por especialidad, valoración, tarifa máxima y disponibilidad
@@ -431,10 +463,9 @@ Para seleccionar al profesional idóneo.
 
 Prueba de aceptación:  
 
-- El sistema lista nombre, foto, especialidades, tarifa por hora y nota media calculada de los trabajadores validados.  
-
-
-##### R.I.03 Información sobre historial de reservas
+- El sistema lista nombre, foto, especialidades, tarifa por hora y nota media calculada de los trabajadores validados.
+  
+##### R.I.06 Información sobre historial de reservas
 Como cliente o trabajador
 
 Quiero consultar la información de mis reservas pasadas y futuras, incluyendo fecha, horas, dirección y estado
@@ -446,7 +477,7 @@ Prueba de aceptación:
 - El sistema muestra la lista detallada de reservas vinculadas al usuario   
 
 
-##### R.I.04 Información sobre valoraciones y reseñas
+##### R.I.07 Información sobre valoraciones y reseñas
 Como cliente
 
 Quiero consultar la lista de valoraciones de un trabajador, incluyendo estrellas y comentarios de clientes previos
@@ -458,7 +489,7 @@ Prueba de aceptación:
 - El sistema muestra las opiniones asociadas a servicios completados del trabajador  
 
 
-##### R.I.05 Información sobre incidencias
+##### R.I.08 Información sobre incidencias
 Como administrador del sistema
 
 Quiero disponer de la lista de incidencias pendientes de resolución con fecha, emisor, tipo y servicio afectado
@@ -470,7 +501,7 @@ Prueba de aceptación:
 - El sistema presenta la lista ordenada por fecha de apertura.   
 
 
-##### R.I.06 Información sobre facturas y pagos
+##### R.I.09 Información sobre facturas y pagos
 Como cliente
 
 Quiero disponer del desglose del importe pagado en cada servicio
@@ -481,7 +512,7 @@ Prueba de aceptación:
 
 - El sistema muestra el id del servicio, fecha, horas realizadas, tarifa/hora e importe total pagado.
 
-##### R.I.07 Información sobre mensajes
+##### R.I.10 Información sobre mensajes
 Como cliente o trabajador
 
 Quiero ver los mensajes enviados y recibidos sobre un servicio
@@ -492,16 +523,6 @@ Prueba de aceptación:
 
 - El sistema muestra los mensajes enviados, recibidos y la fecha y hora de cada uno.
 
-##### R.I.08 Información sobre administradores
-Como administrador
-
-Quiero ver mi perfil
-
-Para comprobar que todos los datos son correctos
-
-Prueba de aceptación: 
-
-- El sistema muestra el perfil del administrador correctamente.
 ---
 
 #### 4.1.2. Reglas de negocio
