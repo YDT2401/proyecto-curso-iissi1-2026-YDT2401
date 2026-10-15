@@ -619,7 +619,7 @@ Para garantizar que todos los profesionales hayan pasado la verificación de ide
 
 ### 4.2. Mapa de historias de usuario (opcional)
 <p align="center">
-  <img src="imagenes/Gemini_Generated_Image_1etwya1etwya1etw.jpg" alt="Mapa de Historias de Usuario" width="100%">
+  <img src="imagenes/mapa_historia_usuario.jpg" alt="Mapa de Historias de Usuario" width="100%">
 </p>
 
 ---
