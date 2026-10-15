@@ -187,6 +187,7 @@ Para darme de baja de la aplicación
 Prueba de aceptación:   
 
 - No puede haber ninguna factura sin pagar
+- Los datos del cliente desaparecen de la base de datos
 
 #### R.F.03.1 Creación de trabajador
 Como trabajador
@@ -223,44 +224,42 @@ Para finalizar mis servicios en la plataforma
 Prueba de aceptación:   
 
 - Que no tenga ninguna incidencia abierta sobre un servicio suyo
+- Los datos del trabajador desaparecen de la base de datos
 
 #### R.F.04.1 Creación de administrador
-Como trabajador
+Como administrador
 
-Quiero registrar mi perfil con DNI/NIE, teléfono móvil, especialidades y zona de trabajo
+Quiero registrarme en la plataforma
 
-Para ofertar mis servicios en la plataforma
-
-Prueba de aceptación:   
-- La especialidad tiene que existir
-- El DNI tiene que tener un formato válido
-- El teléfono móvil tiene que tener un formato válido
-- La zona de trabajo no puede estar vacía
-
-#### R.F.03.2 Edición de trabajador
-Como trabajador
-
-Quiero editar en mi perfil mi teléfono móvil y/o zona de trabajo
-
-Para actualizar mis servicios en la plataforma
+Para poder administrar la plataformas
 
 Prueba de aceptación:   
 
-- El teléfono móvil tiene que tener un formato válido
-- La zona de trabajo no puede estar vacía
+- No se puede crear un administrador sin nombre, email  o teléfono
 
-#### R.F.03.3 Eliminación de trabajador
-Como trabajador
+#### R.F.04.2 Edición de administrador
+Como administrador
 
-Quiero eliminar mi perfil 
+Quiero editar mi perfil 
 
-Para finalizar mis servicios en la plataforma
+Para actualizar mis datos
 
 Prueba de aceptación:   
 
-- Que no tenga ninguna incidencia abierta sobre un servicio suyo
+- El email  y teléfono no pueden estar vacíos
 
-#### R.F.04.1 Creación de servicio
+#### R.F.04.3 Eliminación de administrador
+Como administrador
+
+Quiero eliminar mi usuario 
+
+Para darme de baja en la plataforma
+
+Prueba de aceptación:   
+
+- Los datos del administrador desaparecen de la base de datos
+
+#### R.F.05.1 Creación de servicio
 Como cliente
 
 Quiero solicitar la reserva de un servicio indicando fecha, hora, horas estimadas y trabajador
@@ -278,7 +277,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.06   
 
 
-#### R.F.04.2 Edición de servicio
+#### R.F.05.2 Edición de servicio
 Como cliente
 
 Quiero modificar la fecha u hora de una reserva
@@ -290,7 +289,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.01   
 
 
-#### R.F.04.3 Eliminación de servicio
+#### R.F.05.3 Eliminación de servicio
 Como cliente o trabajador
 
 Quiero cancelar una reserva programada
@@ -302,7 +301,7 @@ Prueba de aceptación:
 - Se aplica la penalización o reembolso según la regla de negocio R.N.01.  
 
 
-#### R.F.05.1 Creación de reseña
+#### R.F.06.1 Creación de reseña
 Como cliente
 
 Quiero valorar un servicio completado con una puntuación y comentario
@@ -315,7 +314,7 @@ Prueba de aceptación:
 - Se debe cumplir la regla de negocio R.N.02.   
 
 
-#### R.F.05.2 Edición de reseña
+#### R.F.06.2 Edición de reseña
 Como cliente
 
 Quiero editar reseñas que haya realizado a algún servicio completado
@@ -327,7 +326,7 @@ Prueba de aceptación:
 - Al cambiar la puntuación la reseña se recalcula automáticamente la nota media del trabajador
 - La puntuación debe estar comprendida entre 1 y 5
 
-#### R.F.05.3 Eliminación de reseña
+#### R.F.06.3 Eliminación de reseña
 Como cliente
 
 Quiero eliminar reseñas que haya realizado a algún servicio completado
@@ -339,7 +338,7 @@ Prueba de aceptación:
 - Al eliminar la reseña se recalcula automáticamente la nota media del trabajador.
 
 
-#### R.F.06.1 Creación de incidencia
+#### R.F.07.1 Creación de incidencia
 Como cliente o trabajador
 
 Quiero registrar una incidencia asociada a un servicio
@@ -352,7 +351,7 @@ Prueba de aceptación:
     
 - Se debe cumplir la regla de negocio R.N.04.   
 
-#### R.F.06.2 Edición de incidencia
+#### R.F.07.2 Edición de incidencia
 Como usuario
 
 Quiero editar una incidencia abierta y registrada por mí
@@ -363,7 +362,7 @@ Prueba de aceptación:
 
 - La incidencia tiene que estar activa
 
-#### R.F.06.3 Eliminación de incidencia
+#### R.F.07.3 Eliminación de incidencia
 Como cliente o trabajador
 
 Quiero cancelar una incidencia abierta y registrada por mí
@@ -373,7 +372,6 @@ Para cerrar dicha incidencia
 Prueba de aceptación:   
 
 - La incidencia se borra
-
 
 
 #### 4.1.1. Requisitos de información
