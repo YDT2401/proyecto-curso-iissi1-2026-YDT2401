@@ -481,6 +481,27 @@ Prueba de aceptación:
 
 - El sistema muestra el id del servicio, fecha, horas realizadas, tarifa/hora e importe total pagado.
 
+##### R.I.07 Información sobre mensajes
+Como cliente o trabajador
+
+Quiero ver los mensajes enviados y recibidos sobre un servicio
+
+Para mejorar la comunicación en el servicio
+
+Prueba de aceptación: 
+
+- El sistema muestra los mensajes enviados, recibidos y la fecha y hora de cada uno.
+
+##### R.I.08 Información sobre administradores
+Como administrador
+
+Quiero ver mi perfil
+
+Para comprobar que todos los datos son correctos
+
+Prueba de aceptación: 
+
+- El sistema muestra el perfil del administrador correctamente.
 ---
 
 #### 4.1.2. Reglas de negocio
