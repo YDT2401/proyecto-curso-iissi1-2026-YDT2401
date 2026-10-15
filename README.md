@@ -373,6 +373,40 @@ Prueba de aceptación:
 
 - La incidencia se borra
 
+#### R.F.08.1 Creación de mensaje
+Como cliente o trabajador
+
+Quiero enviar un mensaje a otro usuario relativo a un servicio contratado
+
+Para coordinar la llegada, la ubicación exacta o los detalles específicos de la limpieza
+
+Prueba de aceptación:
+- No se puede enviar un mensaje sin texto o compuesto únicamente por espacios en blanco.
+- Debe existir un servicio que vincule al cliente y al trabajador.
+- El sistema guarda automáticamente la fecha y hora de envío del mensaje.
+
+#### R.F.08.2 Edición de mensaje
+Como cliente o trabajador
+
+Quiero editar un mensaje que haya enviado previamente
+
+Para corregir errores de escritura o precisar la información proporcionada
+
+Prueba de aceptación:
+- Solo el usuario autor del mensaje puede modificar su contenido.
+- No se puede dejar el texto del mensaje en blanco tras la edición.
+- El mensaje editado mostrará un indicador visible de "editado" en el historial de conversación.
+
+#### R.F.08.3 Eliminación de mensaje
+Como cliente o trabajador
+
+Quiero eliminar un mensaje enviado por mí en una conversación
+
+Para retirar información enviada por error o que ya no resulte relevante
+
+Prueba de aceptación:
+- Solo el autor del mensaje puede eliminarlo.
+- El mensaje desaparece del hilo de chat de la conversación para ambas partes.
 
 #### 4.1.1. Requisitos de información
 
