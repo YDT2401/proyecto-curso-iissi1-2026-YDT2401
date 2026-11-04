@@ -48,57 +48,79 @@ Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digital
 
 #### R.G.01. Gestión de usuarios
 Como usuario del sistema
+
 Quiero gestionar mis datos personales y de acceso
+
 Para identificarme y autenticarme correctamente dentro de la plataforma
 
 #### R.G.02. Gestión de administradores del sistema
 Como administrador del sistema
+
 Quiero gestionar las cuentas y perfiles de los administradores
+
 Para garantizar la supervisión y mantenimiento de la plataforma
 
 #### R.G.03. Gestión de clientes
 Como cliente
+
 Quiero gestionar una cuenta y un perfil de cliente
+
 Para poder contratar los servicios de limpieza de un trabajador
 
 #### R.G.04. Gestión de trabajadores
 Como trabajador
+
 Quiero gestionar una cuenta y un perfil de trabajador
+
 Para ofrecer mis servicios y poder ser contratado por un cliente
 
 #### R.G.05. Gestión de especialidades
 Como administrador del sistema
+
 Quiero gestionar las especialidades de limpieza disponibles
+
 Para categorizar los servicios que pueden ofrecer los trabajadores
 
 #### R.G.06. Gestión de servicios
 Como cliente o trabajador
+
 Quiero gestionar las reservas de servicios de limpieza
+
 Para coordinar la asistencia del profesional al domicilio
 
 #### R.G.07. Gestión de reseñas
 Como cliente
+
 Quiero gestionar las reseñas sobre los trabajadores
+
 Para construir la reputación pública de los profesionales
 
 #### R.G.08. Gestión de incidencias
 Como administrador del sistema
+
 Quiero gestionar las incidencias reportadas por los usuarios
+
 Para resolver mediaciones y disputas de forma justa
 
 #### R.G.09. Gestión de chats
 Como cliente o trabajador
+
 Quiero gestionar la apertura y estado de las salas de chat asociadas a un servicio
+
 Para mantener un canal de comunicación activo y organizado sobre el trabajo a realizar
 
 #### R.G.10. Gestión de mensajes
 Como cliente o trabajador
+
 Quiero gestionar los mensajes enviados dentro de un chat
+
 Para intercambiar detalles específicos sobre la ejecución del servicio
 
 #### R.G.11. Gestión de facturas
 Como administrador del sistema
+
 Quiero gestionar las facturas de los servicios de los clientes
+
 Para garantizar el cobro correcto y permitir la consulta del historial de pagos 
 
 ---
