@@ -130,7 +130,7 @@ Para que puedan observar el historial de sus facturas y pagos
 ##### R.I.01 Información sobre especialidades
 Como administrador del sistema,
 
-quiero disponer de la siguiente información sobre las especialidades de limpieza:
+quiero almacenar la siguiente información sobre las especialidades de limpieza:
 
 El nombre y la descripción de la especialidad.
 
@@ -143,9 +143,7 @@ Como administrador del sistema o trabajador,
 
 quiero almacenar la siguiente información sobre los clientes:
 
-Datos personales (nombre y apellidos).
-
-Datos de contacto (teléfono y correo electrónico).
+Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
 Dirección postal completa de su domicilio.
 
@@ -156,29 +154,24 @@ Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los trabajadores:
 
-Datos personales y de contacto.
+Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
-Estado de verificación de identidad (Pendiente, Validado, Suspendido).
+Documento nacional de identidad y tarifa por hora.
 
-Zona de trabajo y disponibilidad horaria.
-
-Tarifa por hora y especialidades asignadas.
+Zona de trabajo, disponibilidad horaria y especialidades asignadas.
 
 Nota media de valoraciones calculada.
 
 Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
-
 
 ##### R.I.04 Información sobre administrador
 Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre el personal interno:
 
-Datos personales y de contacto.
+Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
-Nombre de usuario y credenciales de acceso (contraseña cifrada).
-
-Permisos y rol dentro de la plataforma.
+Credenciales de acceso y permisos dentro de la plataforma.
 
 Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
 
@@ -188,25 +181,20 @@ Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre los servicios de limpieza:
 
-Fecha, hora de inicio y duración estimada del servicio.
+Fecha y hora de inicio, fecha y hora de fin, y coste total del servicio.
 
-Ubicación exacta donde se prestará el servicio.
-
-Estado actual de la reserva (Pendiente, Aceptado, Completado, Cancelado).
+Estado actual de la reserva según los valores del servicio (Pendiente, En Proceso, Finalizado o Cancelado).
 
 Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
 
-Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.  
-
+Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
 
 ##### R.I.07 Información sobre valoraciones y reseñas
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las valoraciones de los servicios:
 
-Puntuación en estrellas (valor numérico de 1 a 5).
-
-Comentario descriptivo redactado por el cliente.
+Puntuación en estrellas (valor numérico entero) y comentario descriptivo redactado por el cliente.
 
 Fecha de publicación de la reseña.
 
@@ -220,15 +208,11 @@ Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre los problemas reportados:
 
-Fecha y hora de apertura de la incidencia.
+Asunto, descripción detallada y fecha de apertura de la incidencia.
 
-Usuario emisor que reporta el problema (cliente o trabajador).
+Estado de la incidencia según los valores del sistema (Abierta, En Revisión o Resuelta) y la fecha de resolución si procede.
 
-Tipo/categoría de la incidencia y descripción detallada del conflicto.
-
-Estado de la incidencia (Pendiente, En mediación, Resuelta).
-
-Servicio afectado asociado.
+Usuario emisor que reporta el problema y servicio afectado asociado.
 
 Para tramitar la resolución de disputas, gestionar mediaciones y retener pagos si procede.
 
