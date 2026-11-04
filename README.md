@@ -276,6 +276,11 @@ Quiero que los clientes puedan modificar o cancelar la reserva sin coste hasta 1
 
 Para dar flexibilidad al cliente sin perjudicar el tiempo reservado del trabajador. Si se cancela con menos de 12 horas, se cobrará al cliente 1 hora de servicio como penalización.   
 
+Pruebas de aceptación:
+
+-)Caso de éxito (sin penalización): Un cliente cancela una reserva programada para el día siguiente con 15 horas de antelación. El sistema anula la cita correctamente y no aplica ningún cargo adicional.
+
+-)Caso de penalización: Un cliente cancela una reserva con 3 horas de antelación sobre la hora prevista. El sistema aplica y registra de manera automática un cargo equivalente a 1 hora de servicio como penalización para el cliente.
 
 #### R.N.02. Restricción de reseñas
 Como administrador del sistema
@@ -283,6 +288,12 @@ Como administrador del sistema
 Quiero que solo se pueda redactar una reseña si existe un servicio con estado "Completado" vinculado entre el cliente y el trabajador
 
 Para evitar valoraciones falsas o manipulación de la reputación.   
+
+Pruebas de aceptación:
+
+-)Caso válido: Un cliente accede a un servicio que figura con el estado "Completado", introduce una puntuación en estrellas y un comentario, y el sistema almacena la reseña correctamente.
+
+-)Caso denegado: Un cliente intenta redactar una reseña sobre un servicio que se encuentra en estado "Pendiente" o "Aceptado" (aún no realizado), y el sistema bloquea la acción mostrando un mensaje de error por no cumplir la condición.
 
 
 #### R.N.03. Suspensión por baja calificación
@@ -292,6 +303,12 @@ Quiero que si la nota media de un trabajador cae por debajo de 2.0 estrellas (tr
 
 Para garantizar unos estándares mínimos de calidad en el servicio.   
 
+Pruebas de aceptación:
+
+-)Caso de suspensión automática: Un trabajador que ya cuenta con 5 reseñas y una nota media de 2.2 recibe una nueva valoración de 1 estrella, lo que hace que su media global baje a 1.9. El sistema actualiza de forma automática su estado a "Suspendido".
+
+-)Caso de excepción por volumen insuficiente: Un trabajador nuevo que solo tiene 2 reseñas recibe una valoración muy baja que sitúa su media en 1.5 estrellas. Como aún no alcanza el mínimo de 5 reseñas requeridas, el sistema no suspende su cuenta.
+
 
 #### R.N.04. Retención de cobro por incidencia
 Como administrador del sistema
@@ -299,6 +316,12 @@ Como administrador del sistema
 Quiero que si hay una incidencia activa sobre un servicio, el pago correspondiente se mantenga retenido
 
 Para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.   
+
+Pruebas de aceptación:
+
+-)Caso de retención: Un cliente reporta una incidencia grave sobre un servicio recién finalizado. El sistema bloquea el traspaso de fondos al trabajador y marca la factura asociada con el estado "Retenido por incidencia".
+
+-)Caso de liberación posterior: El administrador interviene, resuelve la disputa a favor del trabajador y cierra la incidencia. El sistema actualiza el estado de la factura a "Pagado" y procede a liberar la transferencia de los fondos.
 
 
 #### R.N.05. Rebaja del primer servicio
@@ -308,6 +331,12 @@ Quiero que el primer servicio que contrate un cliente no cuente con comisión po
 
 Para garantizar una buena primera experiencia al cliente
 
+Pruebas de aceptación:
+
+-)Caso de primer servicio (sin comisión): Un cliente recién registrado en la plataforma efectúa su primera contratación. Al generar el desglose de la factura, el sistema aplica un valor de 0 € en el concepto de comisión de la plataforma.
+
+-)Caso de servicios posteriores (con comisión): El mismo cliente realiza su segundo servicio de limpieza. Al emitir la factura, el sistema calcula e incluye de forma normal el porcentaje de comisión correspondiente a la plataforma.
+
 
 #### R.N.06. Validación obligatoria de trabajadores
 Como administrador del sistema
@@ -315,6 +344,13 @@ Como administrador del sistema
 Quiero que un trabajador solo aparezca en las búsquedas si su estado es "Validado"
 
 Para garantizar que todos los profesionales hayan pasado la verificación de identidad.
+
+Pruebas de aceptación:
+
+-)Caso excluido: Un profesional se registra en la plataforma y aporta su documentación, pero su cuenta permanece con el estado "Pendiente". Un cliente realiza una búsqueda de trabajadores por especialidad y zona, y dicho profesional no aparece en los resultados.
+
+-)Caso incluido: El administrador valida la identidad del trabajador y su estado cambia a "Validado". Al repetir la búsqueda, el trabajador pasa a ser visible inmediatamente en los listados del cliente.
+
 
 ---
 
