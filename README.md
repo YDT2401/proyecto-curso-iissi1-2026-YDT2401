@@ -462,7 +462,7 @@ Gestión e Interacción: El administrador a1 ("David Rodríguez") asume inc1. Se
 
 Diagrama de Objetos UML (Escenario 2)
 
-<img src="imagenes/escenario1.png" alt="Escenario de prueba 2" width="1000">
+<img src="imagenes/escenario2.png" alt="Escenario de prueba 2" width="1000">
 
 ## 6. Matrices de trazabilidad
 
