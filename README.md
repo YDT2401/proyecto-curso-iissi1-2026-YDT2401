@@ -183,7 +183,7 @@ Permisos y rol dentro de la plataforma.
 Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
 
 
-##### R.I.05 Información sobre trabajadores disponibles
+##### R.I.06 Información sobre historial de reservas
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre los servicios de limpieza:
@@ -196,65 +196,74 @@ Estado actual de la reserva (Pendiente, Aceptado, Completado, Cancelado).
 
 Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
 
-Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
-  
-##### R.I.06 Información sobre historial de reservas
-Como cliente o trabajador
-
-Quiero consultar la información de mis reservas pasadas y futuras, incluyendo fecha, horas, dirección y estado
-
-Para llevar el seguimiento de mis servicios
-
-Prueba de aceptación:  
-
-- El sistema muestra la lista detallada de reservas vinculadas al usuario   
+Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.  
 
 
 ##### R.I.07 Información sobre valoraciones y reseñas
-Como cliente
+Como cliente o trabajador,
 
-Quiero consultar la lista de valoraciones de un trabajador, incluyendo estrellas y comentarios de clientes previos
+quiero almacenar la siguiente información sobre las valoraciones de los servicios:
 
-Para comprobar su reputación antes de contratar
+Puntuación en estrellas (valor numérico de 1 a 5).
 
-Prueba de aceptación:  
+Comentario descriptivo redactado por el cliente.
 
-- El sistema muestra las opiniones asociadas a servicios completados del trabajador  
+Fecha de publicación de la reseña.
+
+Servicio completado al que está vinculada la reseña.
+
+Para construir y verificar la reputación pública de los profesionales en el sector.
 
 
 ##### R.I.08 Información sobre incidencias
-Como administrador del sistema
+Como administrador del sistema,
 
-Quiero disponer de la lista de incidencias pendientes de resolución con fecha, emisor, tipo y servicio afectado
+quiero almacenar la siguiente información sobre los problemas reportados:
 
-Para intervenir oportunamente en los conflictos
+Fecha y hora de apertura de la incidencia.
 
-Prueba de aceptación:  
+Usuario emisor que reporta el problema (cliente o trabajador).
 
-- El sistema presenta la lista ordenada por fecha de apertura.   
+Tipo/categoría de la incidencia y descripción detallada del conflicto.
+
+Estado de la incidencia (Pendiente, En mediación, Resuelta).
+
+Servicio afectado asociado.
+
+Para tramitar la resolución de disputas, gestionar mediaciones y retener pagos si procede.
 
 
 ##### R.I.09 Información sobre facturas y pagos
-Como cliente
+Como cliente o administrador del sistema,
 
-Quiero disponer del desglose del importe pagado en cada servicio
+quiero almacenar la siguiente información sobre los pagos y comprobantes:
 
-Para tener comprobantes de pago de mis contrataciones
+Identificador único de la factura.
 
-Prueba de aceptación: 
+Fecha y hora de emisión del pago.
 
-- El sistema muestra el id del servicio, fecha, horas realizadas, tarifa/hora e importe total pagado.
+Desglose del importe (horas realizadas, tarifa por hora, comisión de la plataforma e impuestos aplicados).
+
+Estado del cobro (Pagado, Retenido por incidencia, Reembolsado).
+
+Servicio al que corresponde la factura.
+
+Para disponer de justificantes de cobro, aplicar exenciones de comisiones y consultar el historial de transacciones.
 
 ##### R.I.10 Información sobre mensajes
-Como cliente o trabajador
+Como cliente o trabajador,
 
-Quiero ver los mensajes enviados y recibidos sobre un servicio
+quiero almacenar la siguiente información sobre las interacciones del chat:
 
-Para mejorar la comunicación en el servicio
+Fecha y hora exacta de envío.
 
-Prueba de aceptación: 
+Texto o contenido del mensaje.
 
-- El sistema muestra los mensajes enviados, recibidos y la fecha y hora de cada uno.
+Usuario emisor y usuario receptor.
+
+Servicio al que hace referencia la conversación.
+
+Para mantener la trazabilidad de la comunicación previa y posterior a la ejecución del servicio.
 
 ---
 
