@@ -123,7 +123,41 @@ Para que puedan observar el historial de sus facturas y pagos
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01.1 Creación de especialidad
+#### RF.01. Suma total de los importes de los pagos
+Consulta para calcular la suma de los importes totales de las facturas (usando el atributo importeTotal) que están marcadas como pagadas (pagada = true), agrupadas por cada trabajador asociado al servicio.   
+
+#### RF.02. Listado de clientes con más citas
+Consulta para obtener un listado de clientes (mostrando su nombre y dirección) ordenados de forma descendente por el número total de servicios que han contratado en la plataforma.   
+
+#### RF.03. Trabajadores mejor valorados por especialidad
+Consulta para listar el nombre, DNI y tarifaHora de los trabajadores, ordenados por la nota media de la puntuacion de sus reseñas, filtrando exclusivamente por una especialidad concreta.   
+
+#### RF.04. Servicios finalizados con facturas pendientes
+Consulta para obtener los servicios cuyo estado sea FINALIZADO, pero cuya factura asociada mantenga el campo pagada en falso, mostrando el email y teléfono del cliente deudor para poder contactarle.   
+
+#### RF.05. Historial de incidencias de un trabajador
+Consulta para listar todas las incidencias (mostrando asunto, estado y fechaApertura) asociadas a los servicios que ha realizado un trabajador específico a lo largo del tiempo.   
+
+#### RF.06. Mensajes no leídos en chats activos
+Consulta para obtener el contenido y fechaHora de los mensajes que tienen el atributo leido en falso, pertenecientes únicamente a chats cuyo campo activo sea verdadero, indicando a qué servicio pertenecen.   
+
+#### RF.07. Productividad de administradores en incidencias
+Consulta para listar el nombre de cada administrador junto con el recuento total de incidencias que han gestionado y que se encuentran actualmente en estado RESUELTA, evaluando así su volumen de resolución.   
+
+#### RF.08. Recaudación por cancelación de servicios
+Consulta para calcular la suma del costeTotal de los servicios que se encuentran en estado CANCELADO, cruzando con su factura asociada para ver si dicha penalización figura como pagada.   Requisitos Funcionales: Consultas Simples
+
+#### RF.09. Catálogo de especialidades
+Consulta para obtener el nombre y la descripcion de todas las especialidades de limpieza registradas en el sistema, ordenadas alfabéticamente.   
+
+#### RF.10. Búsqueda de trabajadores por tarifa
+Consulta para listar el dni y la tarifaHora de los trabajadores cuya tarifa sea menor o igual a un importe específico fijado en la búsqueda.   
+
+#### RF.11. Control de incidencias en revisión
+Consulta para obtener un listado rápido de los asuntos y descripciones de las incidencias que se encuentran actualmente con el estado EN_REVISION.   
+
+#### RF.12. Recuento de mensajes del sistema
+Consulta para contabilizar el número total de mensajes registrados en la base de datos que se enviaron durante el mes actual, utilizando el atributo fechaHora.
 
 #### 4.1.1. Requisitos de información
 
