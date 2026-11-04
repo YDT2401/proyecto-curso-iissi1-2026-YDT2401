@@ -436,6 +436,23 @@ para garantizar que los datos bancarios no sean almacenados en los servidores de
 
 ### 5.2. Escenarios de prueba
 
+#### Escenario 1: Contratación de Servicio, Conversación por Chat, Incidencia Resuelta y Evaluación Final
+
+En este escenario de prueba se instancian las distintas clases del modelo conceptual para simular el ciclo de vida completo de una reserva:
+
+Contratación: El cliente c1 (Juan) contrata a la trabajadora t1 (María), que cuenta con la especialidad e1 (Limpieza General), instanciando la clase de asociación s1 (Servicio) en estado FINALIZADO con un costeTotal = 45.00.
+
+Facturación: El servicio s1 emite la factura f1, cuyo importe derivado /importeTotal es 45.00 y figura como pagada = True.
+
+Chat y Comunicación: Asociado a s1, se habilita el chat ch1, que almacena los mensajes de coordinación m1 (escrito por t1) y m2 (escrito por c1 respondiendo a m1).
+
+Apertura y Resolución de Incidencia: Debido a un pequeño retraso, el cliente c1 abre la incidencia i1 sobre el servicio s1. El administrador a1 gestiona y atiende la incidencia resolviéndola positivamente (estado = RESUELTA).
+
+Reseña: Una vez el servicio pasa al estado FINALIZADO, el cliente c1 redacta la reseña r1 asociada a s1 otorgando 5 estrellas, respetando la regla de negocio <<RN-2>>.
+
+
+
+
 - con descripción textual y diagrama de objetos UML.
 
 ## 6. Matrices de trazabilidad
