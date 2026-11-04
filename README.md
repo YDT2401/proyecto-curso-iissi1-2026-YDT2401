@@ -180,48 +180,48 @@ Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre las especialidades de limpieza:
 
--)El nombre y la descripción de la especialidad.
+  -)El nombre y la descripción de la especialidad.
 
--)El número de trabajadores asignados a cada especialidad.
+  -)El número de trabajadores asignados a cada especialidad.
 
--)Para categorizar las habilidades de los trabajadores y analizar la oferta de servicios de la plataforma.
+Para categorizar las habilidades de los trabajadores y analizar la oferta de servicios de la plataforma.
 
 ##### R.I.02 Información sobre clientes
 Como administrador del sistema o trabajador,
 
 quiero almacenar la siguiente información sobre los clientes:
 
--)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
+  -)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
--)irección postal completa de su domicilio.
+  -)Dirección postal completa de su domicilio.
 
--)Para identificar al usuario y coordinar la localización de los servicios de limpieza contratados.
+Para identificar al usuario y coordinar la localización de los servicios de limpieza contratados.
 
 ##### R.I.03 Información sobre trabajadores
 Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los trabajadores:
 
--)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
+  -)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
--)Documento nacional de identidad y tarifa por hora.
+  -)Documento nacional de identidad y tarifa por hora.
 
--)Zona de trabajo, disponibilidad horaria y especialidades asignadas.
+  -)Zona de trabajo, disponibilidad horaria y especialidades asignadas.
 
--)Nota media de valoraciones calculada.
+  -)Nota media de valoraciones calculada.
 
--)Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
+Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
 
 ##### R.I.04 Información sobre administrador
 Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre el personal interno:
 
--)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
+  -)Datos personales y de contacto heredados de usuario (nombre, email y teléfono).
 
--)Credenciales de acceso y permisos dentro de la plataforma.
+  -)Credenciales de acceso y permisos dentro de la plataforma.
 
--)Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
+Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
 
 
 ##### R.I.06 Información sobre historial de reservas
@@ -229,26 +229,26 @@ Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre los servicios de limpieza:
 
--)Fecha y hora de inicio, fecha y hora de fin, y coste total del servicio.
+  -)Fecha y hora de inicio, fecha y hora de fin, y coste total del servicio.
 
--)Estado actual de la reserva según los valores del servicio (Pendiente, En Proceso, Finalizado o Cancelado).
+  -)Estado actual de la reserva según los valores del servicio (Pendiente, En Proceso, Finalizado o Cancelado).
 
--)Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
+  -)Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
 
--)Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
+Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
 
 ##### R.I.07 Información sobre valoraciones y reseñas
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las valoraciones de los servicios:
 
--)Puntuación en estrellas (valor numérico entero) y comentario descriptivo redactado por el cliente.
+  -)Puntuación en estrellas (valor numérico entero) y comentario descriptivo redactado por el cliente.
 
--)Fecha de publicación de la reseña.
+  -)Fecha de publicación de la reseña.
 
--)Servicio completado al que está vinculada la reseña.
+  -)Servicio completado al que está vinculada la reseña.
 
--)Para construir y verificar la reputación pública de los profesionales en el sector.
+Para construir y verificar la reputación pública de los profesionales en el sector.
 
 
 ##### R.I.08 Información sobre incidencias
@@ -256,13 +256,13 @@ Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre los problemas reportados:
 
--)Asunto, descripción detallada y fecha de apertura de la incidencia.
+  -)Asunto, descripción detallada y fecha de apertura de la incidencia.
 
--)Estado de la incidencia según los valores del sistema (Abierta, En Revisión o Resuelta) y la fecha de resolución si procede.
+  -)Estado de la incidencia según los valores del sistema (Abierta, En Revisión o Resuelta) y la fecha de resolución si procede.
 
--)Usuario emisor que reporta el problema y servicio afectado asociado.
+  -)Usuario emisor que reporta el problema y servicio afectado asociado.
 
--)Para tramitar la resolución de disputas, gestionar mediaciones y retener pagos si procede.
+Para tramitar la resolución de disputas, gestionar mediaciones y retener pagos si procede.
 
 
 ##### R.I.09 Información sobre facturas y pagos
@@ -270,26 +270,26 @@ Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los pagos y comprobantes:
 
--)Fecha de emisión e importe total de la factura.
+  -)Fecha de emisión e importe total de la factura.
 
--)Estado del pago (indicador de si está pagada o no mediante valor booleano).
+  -)Estado del pago (indicador de si está pagada o no mediante valor booleano).
 
--)Servicio al que corresponde la factura.
+  -)Servicio al que corresponde la factura.
 
--)Para disponer de justificantes de cobro, aplicar exenciones de comisiones y consultar el historial de transacciones.
+Para disponer de justificantes de cobro, aplicar exenciones de comisiones y consultar el historial de transacciones.
 
 ##### R.I.10 Información sobre mensajes
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las interacciones del chat:
 
--)Fecha y hora exacta de envío y contenido o texto del mensaje.
+  -)Fecha y hora exacta de envío y contenido o texto del mensaje.
 
--)Indicador de lectura del mensaje.
+  -)Indicador de lectura del mensaje.
 
--)Usuario emisor, usuario receptor y el chat o servicio al que hace referencia la conversación.
+  -)Usuario emisor, usuario receptor y el chat o servicio al que hace referencia la conversación.
 
--)Para mantener la trazabilidad de la comunicación previa y posterior a la ejecución del servicio.
+Para mantener la trazabilidad de la comunicación previa y posterior a la ejecución del servicio.
 
 ---
 
