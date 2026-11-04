@@ -414,8 +414,7 @@ para garantizar que los datos bancarios no sean almacenados en los servidores de
 ## 5. Modelo conceptual
 
 ### 5.1. Diagramas de clases UML
-
-- con restricciones.
+<img src="imagenes/modelado trabajo iissi.png" alt="Modelado del trabajo" width="600">
 
 ### 5.2. Escenarios de prueba
 
