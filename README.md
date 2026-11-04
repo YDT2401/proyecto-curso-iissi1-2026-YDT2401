@@ -175,7 +175,7 @@ Consulta para contabilizar el número total de mensajes registrados en la base d
 
 ### 4.1.1. Requisitos de información
 
-##### R.I.01 Información sobre especialidades
+#### R.I.01 Información sobre especialidades
 Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre las especialidades de limpieza:
@@ -186,7 +186,7 @@ quiero almacenar la siguiente información sobre las especialidades de limpieza:
 
 Para categorizar las habilidades de los trabajadores y analizar la oferta de servicios de la plataforma.
 
-##### R.I.02 Información sobre clientes
+#### R.I.02 Información sobre clientes
 Como administrador del sistema o trabajador,
 
 quiero almacenar la siguiente información sobre los clientes:
@@ -197,7 +197,7 @@ quiero almacenar la siguiente información sobre los clientes:
 
 Para identificar al usuario y coordinar la localización de los servicios de limpieza contratados.
 
-##### R.I.03 Información sobre trabajadores
+#### R.I.03 Información sobre trabajadores
 Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los trabajadores:
@@ -212,7 +212,7 @@ quiero almacenar la siguiente información sobre los trabajadores:
 
 Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
 
-##### R.I.04 Información sobre administrador
+#### R.I.04 Información sobre administrador
 Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre el personal interno:
@@ -224,7 +224,7 @@ quiero almacenar la siguiente información sobre el personal interno:
 Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
 
 
-##### R.I.06 Información sobre historial de reservas
+#### R.I.06 Información sobre historial de reservas
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre los servicios de limpieza:
@@ -237,7 +237,7 @@ quiero almacenar la siguiente información sobre los servicios de limpieza:
 
 Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
 
-##### R.I.07 Información sobre valoraciones y reseñas
+#### R.I.07 Información sobre valoraciones y reseñas
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las valoraciones de los servicios:
@@ -251,7 +251,7 @@ quiero almacenar la siguiente información sobre las valoraciones de los servici
 Para construir y verificar la reputación pública de los profesionales en el sector.
 
 
-##### R.I.08 Información sobre incidencias
+#### R.I.08 Información sobre incidencias
 Como administrador del sistema,
 
 quiero almacenar la siguiente información sobre los problemas reportados:
@@ -265,7 +265,7 @@ quiero almacenar la siguiente información sobre los problemas reportados:
 Para tramitar la resolución de disputas, gestionar mediaciones y retener pagos si procede.
 
 
-##### R.I.09 Información sobre facturas y pagos
+#### R.I.09 Información sobre facturas y pagos
 Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los pagos y comprobantes:
@@ -278,7 +278,7 @@ quiero almacenar la siguiente información sobre los pagos y comprobantes:
 
 Para disponer de justificantes de cobro, aplicar exenciones de comisiones y consultar el historial de transacciones.
 
-##### R.I.10 Información sobre mensajes
+#### R.I.10 Información sobre mensajes
 Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las interacciones del chat:
