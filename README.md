@@ -256,13 +256,9 @@ Como cliente o administrador del sistema,
 
 quiero almacenar la siguiente información sobre los pagos y comprobantes:
 
-Identificador único de la factura.
+Fecha de emisión e importe total de la factura.
 
-Fecha y hora de emisión del pago.
-
-Desglose del importe (horas realizadas, tarifa por hora, comisión de la plataforma e impuestos aplicados).
-
-Estado del cobro (Pagado, Retenido por incidencia, Reembolsado).
+Estado del pago (indicador de si está pagada o no mediante valor booleano).
 
 Servicio al que corresponde la factura.
 
@@ -273,13 +269,11 @@ Como cliente o trabajador,
 
 quiero almacenar la siguiente información sobre las interacciones del chat:
 
-Fecha y hora exacta de envío.
+Fecha y hora exacta de envío y contenido o texto del mensaje.
 
-Texto o contenido del mensaje.
+Indicador de lectura del mensaje.
 
-Usuario emisor y usuario receptor.
-
-Servicio al que hace referencia la conversación.
+Usuario emisor, usuario receptor y el chat o servicio al que hace referencia la conversación.
 
 Para mantener la trazabilidad de la comunicación previa y posterior a la ejecución del servicio.
 
