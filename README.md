@@ -186,6 +186,7 @@ quiero almacenar la siguiente información sobre las especialidades de limpieza:
 
 Para categorizar las habilidades de los trabajadores y analizar la oferta de servicios de la plataforma.
 
+
 #### R.I.02 Información sobre clientes
 Como administrador del sistema o trabajador,
 
@@ -196,6 +197,7 @@ quiero almacenar la siguiente información sobre los clientes:
   -)Dirección postal completa de su domicilio.
 
 Para identificar al usuario y coordinar la localización de los servicios de limpieza contratados.
+
 
 #### R.I.03 Información sobre trabajadores
 Como cliente o administrador del sistema,
@@ -211,6 +213,7 @@ quiero almacenar la siguiente información sobre los trabajadores:
   -)Nota media de valoraciones calculada.
 
 Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
+
 
 #### R.I.04 Información sobre administrador
 Como administrador del sistema,
@@ -236,6 +239,7 @@ quiero almacenar la siguiente información sobre los servicios de limpieza:
   -)Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
 
 Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
+
 
 #### R.I.06 Información sobre valoraciones y reseñas
 Como cliente o trabajador,
@@ -277,6 +281,7 @@ quiero almacenar la siguiente información sobre los pagos y comprobantes:
   -)Servicio al que corresponde la factura.
 
 Para disponer de justificantes de cobro, aplicar exenciones de comisiones y consultar el historial de transacciones.
+
 
 #### R.I.09 Información sobre mensajes
 Como cliente o trabajador,
