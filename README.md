@@ -427,7 +427,7 @@ para garantizar que los datos bancarios no sean almacenados en los servidores de
 ## 5. Modelo conceptual
 
 ### 5.1. Diagramas de clases UML
-<img src="imagenes/dLVDRXit4BuBq3iCT6aIM4han4PXk47MyZeH84k6LahHna4nsgKi9XGfa5odIPk7wR77ee_W5-kG-wFTbHBKri4IXpF3RpxE3_tAMDGsNOjsotpaSeCQro2uPFRpXe7ITgMgEx50Om9hDL-abWrZ9IF-XS6pgevK2JDi0p_Mf1hbHoSzhadD2XFrYSiR.png" alt="Modelado del trabajo" width="600">
+<img src="modelado conceptual.png" alt="Modelado del trabajo" width="600">
 
 ### 5.2. Escenarios de prueba
 
