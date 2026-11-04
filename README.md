@@ -145,7 +145,7 @@ Consulta para obtener el contenido y fechaHora de los mensajes que tienen el atr
 Consulta para listar el nombre de cada administrador junto con el recuento total de incidencias que han gestionado y que se encuentran actualmente en estado RESUELTA, evaluando así su volumen de resolución.   
 
 #### RF.08. Recaudación por cancelación de servicios
-Consulta para calcular la suma del costeTotal de los servicios que se encuentran en estado CANCELADO, cruzando con su factura asociada para ver si dicha penalización figura como pagada.   Requisitos Funcionales: Consultas Simples
+Consulta para calcular la suma del costeTotal de los servicios que se encuentran en estado CANCELADO, cruzando con su factura asociada para ver si dicha penalización figura como pagada. 
 
 #### RF.09. Catálogo de especialidades
 Consulta para obtener el nombre y la descripcion de todas las especialidades de limpieza registradas en el sistema, ordenadas alfabéticamente.   
