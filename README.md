@@ -436,24 +436,33 @@ para garantizar que los datos bancarios no sean almacenados en los servidores de
 
 ### 5.2. Escenarios de prueba
 
-#### Escenario 1: Contratación de Servicio, Conversación por Chat, Incidencia Resuelta y Evaluación Final
+#### Escenario de prueba 1: Servicio finalizado y reseñado (Flujo Exitoso)
+Descripción textual
+Representa la contratación y finalización con éxito del primer servicio de una clienta, validando las reglas RN-5 (exención de comisión en el 1er servicio) y RN-2 (reseña sobre servicio finalizado).
 
-En este escenario de prueba se instancian las distintas clases del modelo conceptual para simular el ciclo de vida completo de una reserva:
+Usuarios: La clienta c1 ("Laura Gómez") contrata al trabajador validado t1 ("Carlos Ruiz", RN-6), especialista en esp1 ("Limpieza General").
 
-Contratación: El cliente c1 (Juan) contrata a la trabajadora t1 (María), que cuenta con la especialidad e1 (Limpieza General), instanciando la clase de asociación s1 (Servicio) en estado FINALIZADO con un costeTotal = 45.00.
+Servicio e Impuestos: Se instancia el servicio s1 de 3h (estado = FINALIZADO, costeTotal = 45.0 €). Emite la factura f1 por 45.0 € (pagada = true), aplicando RN-5 sin recargo de comisión.
 
-Facturación: El servicio s1 emite la factura f1, cuyo importe derivado /importeTotal es 45.00 y figura como pagada = True.
+Chat y Reseña: Se registra el chat ch1 con el mensaje m1 enviado por c1. Al estar s1 en FINALIZADO, RN-2 permite a c1 publicar la reseña r1 (5 estrellas).
 
-Chat y Comunicación: Asociado a s1, se habilita el chat ch1, que almacena los mensajes de coordinación m1 (escrito por t1) y m2 (escrito por c1 respondiendo a m1).
+Diagrama de Objetos UML (Escenario 1)
 
-Apertura y Resolución de Incidencia: Debido a un pequeño retraso, el cliente c1 abre la incidencia i1 sobre el servicio s1. El administrador a1 gestiona y atiende la incidencia resolviéndola positivamente (estado = RESUELTA).
+<img src="imagenes/escenario1.png" alt="Escenario de prueba 1" width="1000">
 
-Reseña: Una vez el servicio pasa al estado FINALIZADO, el cliente c1 redacta la reseña r1 asociada a s1 otorgando 5 estrellas, respetando la regla de negocio <<RN-2>>.
+#### Escenario de prueba 2: Incidencia abierta y retención de cobro (Flujo con Disputa)
+Descripción textual
+Valida la apertura de una disputa durante un servicio y la aplicación de la RN-4 (bloqueo del pago mientras la incidencia siga abierta).
 
+Servicio y Factura: El cliente c2 ("Manuel Benítez") contrata a la trabajadora t2 ("Ana Martínez", esp2) mediante el servicio s2 (estado = EN_PROCESO, costeTotal = 80.0 €). Se emite la factura f2.
 
+Incidencia y Retención (RN-4): Ocurre un desperfecto y c2 abre la incidencia inc1 ("Cristal roto", estado = ABIERTA). Según RN-4, la factura se mantiene retenida (f2.pagada = false).
 
+Gestión e Interacción: El administrador a1 ("David Rodríguez") asume inc1. Se activa el chat ch2 para mediación, donde a1 envía el mensaje m3 respondiendo al mensaje m2 de c2.
 
-- con descripción textual y diagrama de objetos UML.
+Diagrama de Objetos UML (Escenario 2)
+
+<img src="imagenes/escenario1.png" alt="Escenario de prueba 2" width="1000">
 
 ## 6. Matrices de trazabilidad
 
