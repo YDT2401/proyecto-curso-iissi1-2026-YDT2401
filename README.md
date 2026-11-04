@@ -298,76 +298,76 @@ Para mantener la trazabilidad de la comunicación previa y posterior a la ejecuc
 
 ---
 
-#### 4.1.2. Reglas de negocio
-
+### 4.1.2. Reglas de negocio
 #### R.N.01. Cambios y cancelaciones de reservas
 Como administrador del sistema,
 
 quiero que los clientes puedan modificar o cancelar la reserva sin coste hasta 12 horas antes del inicio previsto, para dar flexibilidad al cliente sin perjudicar el tiempo reservado del trabajador. Si el servicio se cancela con menos de 12 horas, se cobrará al cliente 1 hora de servicio como penalización.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso de éxito (sin penalización): Un cliente cancela un servicio cuya fecha de inicio está programada para dentro de 15 horas. El sistema actualiza el estado del servicio a Cancelado sin aplicar ningún cargo extra.
+-)Comprobar que si el usuario cancela con más de 12 horas de antelación respecto a la fecha y hora de inicio, el estado del servicio cambia a "CANCELADO" sin generar ningún cargo adicional al cliente.
 
--)Caso de penalización: Un cliente cancela un servicio con solo 4 horas de margen respecto a su fecha de inicio. El sistema registra el estado Cancelado y genera de forma automática un cargo de penalización equivalente al valor de 1 hora de la tarifa por hora del trabajador.
-
+-)Verificar que si el usuario cancela con menos de 12 horas de antelación, el sistema registra el estado "CANCELADO" y añade automáticamente a la factura un cargo equivalente a la tarifa de 1 hora del trabajador.
 
 #### R.N.02. Restricción de reseñas
 Como administrador del sistema,
 
 quiero que solo se pueda redactar una reseña si existe un servicio vinculado entre el cliente y el trabajador cuyo estado sea Completado, para evitar valoraciones falsas o manipulación de la reputación.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso válido: Un cliente intenta crear una reseña (con sus atributos de puntuación y comentario) sobre un servicio cuyo estado es Completado. El sistema valida la relación y guarda la reseña correctamente.
+-)Verificar que el sistema permite registrar una reseña únicamente si el servicio asociado tiene el estado "FINALIZADO".
 
--)Caso denegado: Un cliente intenta registrar una reseña asociada a un servicio que se encuentra en estado Pendiente o En Proceso. El sistema bloquea la acción y muestra un error por no cumplir la condición del estado finalizado.
+-)Comprobar que el sistema bloquea y muestra un error si se intenta valorar un servicio en estado "PENDIENTE", "EN_PROCESO" o "CANCELADO".
 
-
+-)Confirmar que el cliente que intenta publicar la reseña es exactamente el mismo usuario que figura como contratante del servicio.
+ 
 #### R.N.03. Suspensión por baja calificación
 Como administrador del sistema,
 
 quiero que si la nota media de un trabajador cae por debajo de 2.0 estrellas (tras acumular al menos 5 reseñas asociadas), su perfil pase automáticamente a un estado de suspensión, para garantizar unos estándares mínimos de calidad en la plataforma.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso de suspensión automática: Un trabajador que acumula 6 reseñas con una nota media de 2.2 recibe una nueva reseña con puntuación de 1 estrella, situando su media global en 1.9. El sistema actualiza automáticamente su visibilidad y bloquea la asignación de nuevos servicios.
+-)Comprobar que el sistema recalcula la nota media del trabajador dinámicamente tras la inserción de una nueva reseña.
 
--)Caso de excepción por volumen insuficiente: Un trabajador nuevo que solo cuenta con 2 reseñas recibe una valoración de 1 estrella (media de 1.5). Dado que todavía no alcanza el mínimo de 5 reseñas exigidas, el sistema no aplica la suspensión.
+-)Verificar que si un trabajador tiene menos de 5 reseñas en total, su perfil permanece activo independientemente de si su nota media es inferior a 2.0.
 
+-)Confirmar que en el momento en que un trabajador alcanza 5 o más reseñas y su nota media resulta inferior a 2.0, el sistema bloquea su perfil impidiendo que aparezca en el catálogo y reciba nuevas contrataciones.
 
 #### R.N.04. Retención de cobro por incidencia
 Como administrador del sistema,
 
 quiero que si hay una incidencia abierta sobre un servicio, la factura asociada mantenga su estado de cobro retenido o no pagado, para evitar transferir dinero al trabajador hasta que el conflicto sea resuelto por el administrador.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso de retención: Un cliente o trabajador abre una incidencia (con estado en Abierta) sobre un servicio ya finalizado. El sistema bloquea la liquidación y mantiene la factura asociada como no pagada / retenida.
+-)Verificar que al registrarse una incidencia (estado "ABIERTA" o "EN_REVISION") vinculada a un servicio, el sistema impide que el atributo pagada de la factura asociada pase a verdadero.
 
--)Caso de liberación posterior: El administrador gestiona y resuelve la disputa cambiando el estado de la incidencia a Resuelta. El sistema actualiza el estado de la factura a pagada y libera la transferencia de fondos al trabajador.
+-)Comprobar que cuando el administrador cambia el estado de la incidencia a "RESUELTA", el sistema libera el bloqueo y permite marcar la factura como pagada para efectuar la liquidación.
 
 #### R.N.05. Rebaja del primer servicio
 Como administrador del sistema,
 
 quiero que el primer servicio que contrate un cliente no cuente con comisión por parte de la aplicación, para garantizar una buena primera experiencia en CleanConnect.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso de primer servicio (sin comisión): Un cliente recién registrado efectúa su primera contratación de un servicio. Al calcular el importe total de la factura asociada, el sistema aplica una exención restando la comisión de la plataforma (quedando en 0 € de comisión).
+-)Comprobar que si el cliente no tiene ningún servicio finalizado en su historial, la factura generada deduce el 100% del porcentaje correspondiente a la comisión de la plataforma.
 
--)Caso de servicios posteriores (con comisión): El mismo cliente realiza un segundo servicio. Al generar la factura, el sistema calcula e incluye de forma normal el porcentaje de comisión estipulado por la plataforma en el importe total.
+-)Verificar que si el cliente ya cuenta con servicios previos, el sistema aplica y suma la tasa de comisión estándar al importe total de la factura.
 
 #### R.N.06. Validación obligatoria de trabajadores
 Como administrador del sistema,
 
 quiero que un trabajador solo pueda recibir solicitudes de contratación si su identidad ha sido validada y asociada correctamente en el sistema, garantizando la seguridad de los clientes.
 
-Prueba de negocio:
+Pruebas de aceptación:
 
--)Caso excluido: Un profesional se registra aportando sus datos y su DNI, pero el administrador aún no ha verificado su cuenta. Cuando un cliente intenta buscar profesionales de una especialidad, dicho trabajador no aparece en los resultados de búsqueda.
+-)Comprobar que un trabajador sin validación de identidad no es devuelto en las consultas de búsqueda de profesionales realizadas por los clientes.
 
--)Caso incluido: El administrador aprueba la documentación del profesional. Tras la validación, el trabajador pasa a estar disponible dentro de la especialidad correspondiente y puede recibir ofertas de contratación de los clientes de manera inmediata.
+-)Verificar que, de forma inmediata tras la aprobación manual del administrador, el perfil del trabajador se vuelve visible en su especialidad y habilitado para reservas.
 
 
 ---
