@@ -173,7 +173,7 @@ Consulta para obtener un listado rápido de los asuntos y descripciones de las i
 #### RF.12. Recuento de mensajes del sistema
 Consulta para contabilizar el número total de mensajes registrados en la base de datos que se enviaron durante el mes actual, utilizando el atributo fechaHora.
 
-#### 4.1.1. Requisitos de información
+### 4.1.1. Requisitos de información
 
 ##### R.I.01 Información sobre especialidades
 Como administrador del sistema,
