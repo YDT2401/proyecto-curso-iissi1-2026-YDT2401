@@ -128,46 +128,75 @@ Para que puedan observar el historial de sus facturas y pagos
 #### 4.1.1. Requisitos de información
 
 ##### R.I.01 Información sobre especialidades
-Como administrador del sistema
+Como administrador del sistema,
 
-Quiero disponer del listado de especialidades con el número de trabajadores asignados a cada una
+quiero disponer de la siguiente información sobre las especialidades de limpieza:
 
-Para analizar la oferta de servicios de la plataforma
+El nombre y la descripción de la especialidad.
+
+El número de trabajadores asignados a cada especialidad.
+
+Para categorizar las habilidades de los trabajadores y analizar la oferta de servicios de la plataforma.
 
 ##### R.I.02 Información sobre clientes
-Como cliente
+Como administrador del sistema o trabajador,
 
-Quiero que el sistema muestre mi perfil
+quiero almacenar la siguiente información sobre los clientes:
 
-Para comprobar que mis datos aparecen correctamente
+Datos personales (nombre y apellidos).
 
+Datos de contacto (teléfono y correo electrónico).
+
+Dirección postal completa de su domicilio.
+
+Para identificar al usuario y coordinar la localización de los servicios de limpieza contratados.
 
 ##### R.I.03 Información sobre trabajadores
-Como trabajador
+Como cliente o administrador del sistema,
 
-Quiero que el sistema muestre mi perfil
+quiero almacenar la siguiente información sobre los trabajadores:
 
-Para comprobar que mis datos aparecen correctamente
+Datos personales y de contacto.
+
+Estado de verificación de identidad (Pendiente, Validado, Suspendido).
+
+Zona de trabajo y disponibilidad horaria.
+
+Tarifa por hora y especialidades asignadas.
+
+Nota media de valoraciones calculada.
+
+Para evaluar el perfil del profesional y permitir su selección en las búsquedas de la plataforma.
 
 
 ##### R.I.04 Información sobre administrador
-Como administrador
+Como administrador del sistema,
 
-Quiero que el sistema muestre mi perfil
+quiero almacenar la siguiente información sobre el personal interno:
 
-Para comprobar que mis datos aparecen correctamente
+Datos personales y de contacto.
+
+Nombre de usuario y credenciales de acceso (contraseña cifrada).
+
+Permisos y rol dentro de la plataforma.
+
+Para gestionar, validar cuentas y supervisar el funcionamiento seguro del sistema.
 
 
 ##### R.I.05 Información sobre trabajadores disponibles
-Como cliente
+Como cliente o trabajador,
 
-Quiero disponer de la lista de trabajadores filtrada por especialidad, valoración, tarifa máxima y disponibilidad
+quiero almacenar la siguiente información sobre los servicios de limpieza:
 
-Para seleccionar al profesional idóneo.
+Fecha, hora de inicio y duración estimada del servicio.
 
-Prueba de aceptación:  
+Ubicación exacta donde se prestará el servicio.
 
-- El sistema lista nombre, foto, especialidades, tarifa por hora y nota media calculada de los trabajadores validados.
+Estado actual de la reserva (Pendiente, Aceptado, Completado, Cancelado).
+
+Vínculo con el cliente que solicita, el trabajador asignado y la especialidad contratada.
+
+Para llevar el seguimiento, control y trazabilidad del historial de reservas pasadas y futuras.
   
 ##### R.I.06 Información sobre historial de reservas
 Como cliente o trabajador
