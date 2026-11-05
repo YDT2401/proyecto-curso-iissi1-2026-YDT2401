@@ -138,7 +138,7 @@ Para garantizar el cobro correcto y permitir la consulta del historial de pagos
 ### 4.1. Requisitos funcionales
 
 #### RF.01. Suma total de los importes de los pagos
-Consulta para calcular la suma de los importes totales de las facturas (usando el atributo importeTotal) que están marcadas como pagadas (pagada = true), agrupadas por cada trabajador asociado al servicio.   
+Consulta para calcular la suma de los importes totales de las facturas (usando el atributo importeTotal) que están marcadas como pagadas (pagada = true).   
 
 #### RF.02. Listado de clientes con más citas
 Consulta para obtener un listado de clientes (mostrando su nombre y dirección) ordenados de forma descendente por el número total de servicios que han contratado en la plataforma.   
@@ -162,7 +162,7 @@ Consulta para listar el nombre de cada administrador junto con el recuento total
 Consulta para calcular la suma del costeTotal de los servicios que se encuentran en estado CANCELADO, cruzando con su factura asociada para ver si dicha penalización figura como pagada. 
 
 #### RF.09. Catálogo de especialidades
-Consulta para obtener el nombre y la descripcion de todas las especialidades de limpieza registradas en el sistema, ordenadas alfabéticamente.   
+Consulta para obtener el nombre y la descripciónn de todas las especialidades de limpieza registradas en el sistema, ordenadas alfabéticamente.   
 
 #### RF.10. Búsqueda de trabajadores por tarifa
 Consulta para listar el dni y la tarifaHora de los trabajadores cuya tarifa sea menor o igual a un importe específico fijado en la búsqueda.   
