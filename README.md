@@ -22,23 +22,27 @@ Para solucionar todo esto proponemos el proyecto CleanConnect, que busca digital
 
 
 ## 2. Glosario de términos
-- Especialidad: Representa los distintos tipos de limpieza que se ofrecen. Sirve para categorizar las habilidades del trabajador y facilitar la búsqueda al cliente.
+-)Usuario: Representa a cualquier persona registrada en la plataforma (cliente, trabajador o administrador). Almacena los datos de perfil básicos, las credenciales de acceso y permite gestionar acciones comunes, como el reporte de incidencias.
 
-- Cliente: Usuarios que solicita y contrata los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
+-)Cliente: Usuarios que solicitan y contratan los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
 
-- Trabajador: Representa a los profesionales que ofrecen sus servicios en la app. Incluye sus datos personales, el estado de verificación de su identidad, zona de trabajo y disponibilidad.
+-)Trabajador: Representa a los profesionales que ofrecen sus servicios en la plataforma. Incluye sus datos personales, el estado de verificación de su identidad, zona de trabajo y disponibilidad.
 
-- Servicio: Es la entidad principal de la plataforma. Representa la reserva de un trabajo de limpieza concreto entre un cliente y un trabajador, guardando la fecha, hora, duración, ubicación y estado.
+-)Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y resolver las incidencias reportadas.
 
-- Reseña: Guarda la valoración que realiza un cliente al terminar el servicio. Incluye una puntuación en estrellas y un comentario para construir la reputación pública del profesional.
+-)Especialidad: Representa los distintos tipos de limpieza que se ofrecen. Sirve para categorizar las habilidades del trabajador y facilitar la búsqueda al cliente.
 
-- Incidencia: Registra los problemas reportados por los usuarios sobre un servicio para que el administrador pueda gestionarlos y resolverlos.
+-)Servicio: Es la entidad principal de la plataforma. Representa la reserva de un trabajo de limpieza concreto entre un cliente y un trabajador, guardando la fecha, hora, duración, ubicación, estado y la especialidad contratada.
 
-- Factura: Almacena los datos del pago y del comprobante de cada servicio realizado, desglosando el importe total, la comisión de la plataforma, los impuestos y el estado del cobro.
+-)Reseña: Guarda la valoración que realiza un cliente al terminar el servicio. Incluye una puntuación en estrellas y un comentario para construir la reputación pública del profesional.
 
-- Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y resolver las incidencias reportadas.
-  
-- Mensaje: Interacción entre un cliente y un trabajador acerca de un servicio. Incluye la fecha y la hora a la que se manda el mensaje y el contenido de este.
+-)Incidencia: Registra los problemas reportados por un cliente o un trabajador sobre un servicio para que el administrador pueda gestionarlos, mediar y resolverlos.
+
+-)Factura: Almacena los datos del pago y del comprobante de cada servicio realizado. Desglosa el importe total, la comisión de la plataforma y los impuestos, registrando el estado detallado del cobro (como Pendiente, Retenida o Pagada) para gestionar correctamente los pagos o bloqueos por disputas.
+
+-)Chat: Sala de comunicación independiente vinculada obligatoriamente a un servicio. Agrupa la conversación activa entre el cliente y el trabajador asignado, registrando su estado de actividad y fecha de creación.
+
+-)Mensaje: Interacción individual enviada dentro de un chat. Incluye la fecha, la hora de envío y el contenido del texto intercambiado entre los usuarios.
   
 ---
 
@@ -98,7 +102,7 @@ Para construir la reputación pública de los profesionales
 #### R.G.08. Gestión de incidencias
 Como administrador del sistema
 
-Quiero gestionar las incidencias reportadas por los usuarios
+Quiero gestionar las incidencias reportadas por los clientes
 
 Para resolver mediaciones y disputas de forma justa
 
@@ -128,7 +132,7 @@ Para garantizar el cobro correcto y permitir la consulta del historial de pagos
 ### 3.2. Usuarios del sistema
 - Administrador: Representa al personal interno encargado de la gestión y supervisión de la plataforma. Almacena sus datos de acceso y permisos para validar las cuentas de los trabajadores, gestionar las especialidades y resolver las incidencias reportadas.
   
-- Cliente: Usuarios que solicita y contrata los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
+- Cliente: Usuario que solicita y contrata los servicios de limpieza. Almacena sus datos personales, de contacto y su dirección.
   
 - Trabajador: Representa a los profesionales que ofrecen sus servicios en la app. Incluye sus datos personales, el estado de verificación de su identidad, zona de trabajo y disponibilidad.
 
