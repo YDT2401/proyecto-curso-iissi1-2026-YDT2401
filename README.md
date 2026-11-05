@@ -485,6 +485,8 @@ Diagrama de Objetos UML (Escenario 2)
 | **R.N.04**           |         |    X    |     X      |       X       |              |    X     |        |     X      |    X    |      |         |           |       |   X   |  X   |    X     |     X     |         |        |         |          |        |        |        |   X    |        |        |
 | **R.N.05**           |         |    X    |            |               |              |    X     |        |            |    X    |      |         |     X     |       |   X   |      |          |           |         |        |         |          |        |        |        |        |   X    |        |
 | **R.N.06**           |         |         |     X      |               |      X       |          |        |            |         |      |         |           |   X   |       |      |          |           |         |        |         |          |        |        |        |        |        |   X    |
+
+
 -- fin entregable 2 --
 
 ## 7. Modelo relacional en 3FN
