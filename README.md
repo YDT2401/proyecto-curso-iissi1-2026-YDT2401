@@ -468,16 +468,23 @@ Diagrama de Objetos UML (Escenario 2)
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
-
+| Requisito / Elemento | Usuario | Cliente | Trabajador | Administrador | Especialidad | Servicio | Reseña | Incidencia | Factura | Chat | Mensaje | contrataA | tiene | emite | abre | gestiona | asociadaA | escribe | genera | atiende | contiene | R.N.01 | R.N.02 | R.N.03 | R.N.04 | R.N.05 | R.N.06 |
+| :------------------- | :-----: | :-----: | :--------: | :-----------: | :----------: | :------: | :----: | :--------: | :-----: | :--: | :-----: | :-------: | :---: | :---: | :--: | :------: | :-------: | :-----: | :----: | :-----: | :------: | :----: | :----: | :----: | :----: | :----: | :----: |
+| **R.I.01**           |         |         |            |               |      X       |          |        |            |         |      |         |           |   X   |       |      |          |           |         |        |         |          |        |        |        |        |        |        |
+| **R.I.02**           |    X    |    X    |            |               |              |          |        |            |         |      |         |           |       |       |      |          |           |         |        |         |          |        |        |        |        |        |        |
+| **R.I.03**           |    X    |         |     X      |               |      X       |          |        |            |         |      |         |           |   X   |       |      |          |           |         |        |         |          |        |        |        |        |        |   X    |
+| **R.I.04**           |    X    |         |            |       X       |              |          |        |            |         |      |         |           |       |       |      |          |           |         |        |         |          |        |        |        |        |        |        |
+| **R.I.05**           |         |    X    |     X      |               |      X       |    X     |        |            |         |      |         |     X     |       |       |      |          |           |         |        |         |          |        |        |        |        |        |        |
+| **R.I.06**           |         |    X    |     X      |               |              |    X     |   X    |            |         |      |         |           |       |       |      |          |           |         |   X    |         |          |        |   X    |        |        |        |        |
+| **R.I.07**           |         |    X    |     X      |       X       |              |    X     |        |     X      |         |      |         |           |       |       |  X   |    X     |     X     |         |        |         |          |        |        |        |   X    |        |        |
+| **R.I.08**           |         |    X    |            |       X       |              |    X     |        |            |    X    |      |         |           |       |   X   |      |          |           |         |        |         |          |        |        |        |        |   X    |        |
+| **R.I.09**           |         |    X    |     X      |       X       |              |          |        |            |         |  X   |    X    |           |       |       |      |          |           |    X    |        |    X    |    X     |        |        |        |        |        |        |
+| **R.N.01**           |         |    X    |     X      |               |              |    X     |        |            |         |      |         |     X     |       |       |      |          |           |         |        |         |          |   X    |        |        |        |        |        |
+| **R.N.02**           |         |    X    |     X      |               |              |    X     |   X    |            |         |      |         |           |       |       |      |          |           |         |   X    |         |          |        |   X    |        |        |        |        |
+| **R.N.03**           |         |         |     X      |               |              |          |   X    |            |         |      |         |           |       |       |      |          |           |         |   X    |         |          |        |        |   X    |        |        |        |
+| **R.N.04**           |         |    X    |     X      |       X       |              |    X     |        |     X      |    X    |      |         |           |       |   X   |  X   |    X     |     X     |         |        |         |          |        |        |        |   X    |        |        |
+| **R.N.05**           |         |    X    |            |               |              |    X     |        |            |    X    |      |         |     X     |       |   X   |      |          |           |         |        |         |          |        |        |        |        |   X    |        |
+| **R.N.06**           |         |         |     X      |               |      X       |          |        |            |         |      |         |           |   X   |       |      |          |           |         |        |         |          |        |        |        |        |        |   X    |
 -- fin entregable 2 --
 
 ## 7. Modelo relacional en 3FN
