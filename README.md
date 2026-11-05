@@ -378,7 +378,7 @@ Pruebas de aceptación:
 
 ### 4.2. Mapa de historias de usuario (opcional)
 <p align="center">
-  <img src="imagenes/mapa_historia_usuario.jpg" alt="Mapa de Historias de Usuario" width="100%">
+  <img src="Mapa de Historias de Usuario.jpg" alt="Mapa de Historias de Usuario" width="100%">
 </p>
 
 ---
