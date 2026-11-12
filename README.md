@@ -442,11 +442,11 @@ para garantizar que los datos bancarios no sean almacenados en los servidores de
 
 #### Escenario de prueba 1: Servicio finalizado y reseñado (Flujo Exitoso)
 Descripción textual
-Representa la contratación y finalización con éxito del primer servicio de una clienta, validando las reglas RN-5 (exención de comisión en el 1er servicio) y RN-2 (reseña sobre servicio finalizado).
+Representa la contratación y finalización con éxito del primer servicio de una clienta.
 
-Usuarios: La clienta c1 ("Laura Gómez") contrata al trabajador validado t1 ("Carlos Ruiz", RN-6), especialista en esp1 ("Limpieza General").
+Usuarios: La clienta c1 ("Laura Gómez") contrata al trabajador validado t1 ("Carlos Ruiz"), especialista en esp1 ("Limpieza General").
 
-Servicio e Impuestos: Se instancia el servicio s1 de 3h (estado = FINALIZADO, costeTotal = 45.0 €). Emite la factura f1 por 45.0 € (pagada = true), aplicando RN-5 sin recargo de comisión.
+Servicio e Impuestos: Se instancia el servicio s1 de 3h (estado = FINALIZADO, costeTotal = 45.0 €). Emite la factura f1 por 45.0 € (pagada = true).
 
 Chat y Reseña: Se registra el chat ch1 con el mensaje m1 enviado por c1. Al estar s1 en FINALIZADO, RN-2 permite a c1 publicar la reseña r1 (5 estrellas).
 
@@ -456,11 +456,11 @@ Diagrama de Objetos UML (Escenario 1)
 
 #### Escenario de prueba 2: Incidencia abierta y retención de cobro (Flujo con Disputa)
 Descripción textual
-Valida la apertura de una disputa durante un servicio y la aplicación de la RN-4 (bloqueo del pago mientras la incidencia siga abierta).
+Valida la apertura de una disputa durante un servicio y el bloqueo del pago mientras la incidencia siga abierta.
 
 Servicio y Factura: El cliente c2 ("Manuel Benítez") contrata a la trabajadora t2 ("Ana Martínez", esp2) mediante el servicio s2 (estado = EN_PROCESO, costeTotal = 80.0 €). Se emite la factura f2.
 
-Incidencia y Retención (RN-4): Ocurre un desperfecto y c2 abre la incidencia inc1 ("Cristal roto", estado = ABIERTA). Según RN-4, la factura se mantiene retenida (f2.pagada = false).
+Incidencia y Retención: Ocurre un desperfecto y c2 abre la incidencia inc1 ("Cristal roto", estado = ABIERTA). La factura se mantiene retenida (f2.pagada = false).
 
 Gestión e Interacción: El administrador a1 ("David Rodríguez") asume inc1. Se activa el chat ch2 para mediación, donde a1 envía el mensaje m3 respondiendo al mensaje m2 de c2.
 
